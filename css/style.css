@@ -1,17 +1,19 @@
 /* Global */
+body {
+ background-color: #131313;
+}
 
-html, 
-.body,
-h1, h2, h3, h4, h5, h6 {
+html, .body, h1, h2, h3, h4, h5, h6 {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
     font-variation-settings: "wdth" 100;
 }
-  
 
-
+h1, h2, h3, h4, h5, h6 {
+    font-weight: medium;
+}
 
 /* Define a transition duration during page visits */
 html.is-changing .transition-fade {

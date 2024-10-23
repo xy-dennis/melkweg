@@ -1,10 +1,10 @@
 class Header extends HTMLElement {
     constructor() {
-      super();
+        super();
     }
-  
+
     connectedCallback() {
-      this.innerHTML = `
+        this.innerHTML = `
         <style>
             // component custom styles here
         </style>
@@ -22,10 +22,10 @@ class Header extends HTMLElement {
             </div>
 
         </nav>
-      `;
+        `;
     }
-  }
+}
   
-  customElements.define('header-component', Header);
+customElements.define('header-component', Header);
 
-  console.log('Nav Loaded')
+console.log('Nav Loaded')
