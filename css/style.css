@@ -1,3 +1,18 @@
+/* Global */
+
+html, 
+.body,
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+  
+
+
+
 /* Define a transition duration during page visits */
 html.is-changing .transition-fade {
     transition: opacity 0.25s;
