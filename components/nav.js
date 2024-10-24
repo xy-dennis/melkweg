@@ -6,17 +6,24 @@ class Header extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <style>
-            // component custom styles here
+            .navbar-left, .navbar-right {
+                position: absolute;
+                z-index: 850;
+                top: 15px;
+            }
+            .navbar-left {left: 25px}
+            .navbar-right {right: 25px}
         </style>
-        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
 
-            <div class="uk-navbar-left">
-                <a class="uk-navbar-item uk-logo" href="#" aria-label="Back to Home">Melkweg</a>
+        <nav class="">
+
+            <div class="navbar-left">
+                <a class="uk-navbar-item uk-logo" href="/" aria-label="Back to Home">MW</a>
             </div>
 
-            <div class="uk-navbar-right">
+            <div class="navbar-right">
                 <ul class="uk-navbar-nav">
-                    <li><a href="/">Home</a></li>
+                    <li><a href="/" class="home">Home</a></li>
                     <li><a href="/about.html">About</a></li>
                 </ul>
             </div>

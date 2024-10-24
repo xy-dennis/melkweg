@@ -1,6 +1,12 @@
 /* Global */
+:root {
+    --black: #131313;
+    --blue: #1e90ff;
+    --white: #ffffff;
+}
+
 body {
- background-color: #131313;
+ background-color: var(--black);
 }
 
 html, .body, h1, h2, h3, h4, h5, h6 {
@@ -12,16 +18,8 @@ html, .body, h1, h2, h3, h4, h5, h6 {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: medium;
+    font-weight: 500;
 }
 
-/* Define a transition duration during page visits */
-html.is-changing .transition-fade {
-    transition: opacity 0.25s;
-    opacity: 1;
-  }
-  /* Define the styles for the unloaded pages */
-  html.is-animating .transition-fade {
-    opacity: 0;
-  }
+
   

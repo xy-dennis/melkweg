@@ -1,8 +1,10 @@
+const swup = new Swup();
+
 switch (window.location.pathname) {
     case '/':
-        $('#main').addClass('tech');
+        $('.home').addClass('uk-active');
         break;
-    case '/about':
+    case '/about.html':
         // code block
         break;
     case '/somestuff':
