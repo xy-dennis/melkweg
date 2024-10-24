@@ -6,11 +6,29 @@ class Footer extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <style>
-            // Footer Component custom styles here
+            .coral-bg > .uk-section {
+                background-color: var(--coral);
+            }
+            .black-bg > .uk-section {
+                background-color: var(--black);
+            }
         </style>
-        <div class="uk-section uk-section-primary">
+        <div class="uk-section">
             <div class="uk-container uk-container-expand">
-                <h3>Footer Goes Here</h3>
+                <div uk-grid>
+                    <div class="uk-width-1-4@m">
+                        One
+                    </div>
+                    <div class="uk-width-1-4@m">
+                        Two
+                    </div>
+                    <div class="uk-width-1-4@m">
+                        Three
+                    </div>
+                    <div class="uk-width-1-4@m">
+                        Four
+                    </div>
+                </div>
             </div>
         </div>
         `;

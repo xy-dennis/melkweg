@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title></title>
+        <title>About - Melkweg</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -10,6 +10,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.5.9/css/uikit.min.css"/>
         
         <!-- Preloads -->
@@ -28,35 +30,46 @@
 
         <!-- Components -->
         <script src="components/nav.js"></script>
+        <script src="components/about.js"></script>
         <script src="components/footer.js"></script>
+
+        <style type="text/css">
+            
+        </style>
+
     </head>
     <body class="uk-light">
         
         <header-component></header-component>
         
-        <main id="swup" class="transition-fade transition-blocks">
+        <main id="swup" class="transition-slide transition-blocks">
 
             <!-- Content Section -->
-            <section class="uk-section uk-height-viewport" style="background-color: #F44336">
-                <div class="uk-container">
+            <section id="About" class="transition-intro-shape uk-section uk-height-viewport uk-position-relative uk-padding-remove-top coral-bg">
+                <div class="uk-container uk-container-expand uk-position-center">
                     <div class="uk-flex-middle uk-flex" uk-grid>
-                        <div class="uk-width-1-2@m">
-                            <h1>About</h1>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                            <a href="/" class="uk-button uk-button-primary">Home</a>
+                        <div class="uk-width-1-2">
+                            <h1 class="transition-fade">About</h1>
+                            <h2 class="transition-fade stroke-title">Melkweg</h2>
                         </div>
-                        <div class="uk-width-1-2@m">
-                            <img src="img/meet-2.png" alt="About Image" loading="lazy" width="100%" height="auto">
+                        <div class="uk-width-1-2">
+                            <p class="transition-fade uk-text-lead">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse maximus posuere turpis in
+                                malesuada. Proin non molestie erat, eget luctus odio. Quisque vel consectetur nisl, a efficitur sem.
+                            </p>
                         </div>
                     </div>
                 </div>
             </section>
             <!-- END - Content Section -->
 
+            <about-component class="coral-bg"></about-component>
+
+            <footer-component class="coral-bg"></footer-component>
+
         </main>
 
-        <footer-component></footer-component>
-        
+         
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.5.9/js/uikit.min.js" 
                 integrity="sha512-OZ9Sq7ecGckkqgxa8t/415BRNoz2GIInOsu8Qjj99r9IlBCq2XJlm9T9z//D4W1lrl+xCdXzq0EYfMo8DZJ+KA==" crossorigin="anonymous"></script>

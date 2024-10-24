@@ -1,14 +1,14 @@
 const swup = new Swup();
 
 switch (window.location.pathname) {
-    case '/':
+    case '':
         $('.home').addClass('uk-active');
         break;
-    case '/about.html':
-        // code block
+    case 'about.html':
+        $('.about').addClass('uk-active');
         break;
-    case '/somestuff':
-        $('#main').addClass('some');
+    case 'contact.html':
+        $('.contact').addClass('uk-active');
         break;
     default: 
         // code block

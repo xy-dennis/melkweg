@@ -1,28 +1,83 @@
 
 /* DOCUMENTATION - https://swup.js.org/getting-started/animations/ */
 
-.transition-fade {
-    opacity: 1;
-    transition: all ease-in-out 400ms;
-    transition-delay: 10ms;
+/* SLIDE ANIMATIONS */
+
+.transition-slide {
+    /* opacity: 1; */
+    /* transition: opacity ease-in-out 100ms; */
+    transition: transform ease-in-out 450ms;
     transform: translateY(0);
-    transform-origin: top;
+    transform-origin: bottom;
+}
+
+/* Define the styles for the unloaded pages */
+html.is-animating .transition-slide {
+    /* opacity: 1; */
+    transform: translateY(100%);
+}
+
+html.is-leaving .transition-slide { 
+    /* opacity: 0; */
+    transform: translateY(0);
+}
+
+
+
+/* INTRO SHAPE - SECTION */
+html.is-changing .transition-intro-shape:before {
+    transition: height 850ms;
+    height: 0;
+}
+
+html.is-animating .transition-intro-shape:before {
+    height: 1250px;
+}
+
+html.is-leaving .transition-intro-shape:before { 
+    height: 0;
+}
+
+
+
+/* FADE ANIMATIONS */
+
+/* Chain Opacity to Elements Within the Page Animation */
+html.is-changing .transition-fade {
+    transition: all ease-in-out 900ms;
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* Define the styles for the unloaded pages */
 html.is-animating .transition-fade {
-    opacity: 1;
-    transform: translateY(100%);
+    opacity: 0;
+    transform: translateY(60px);
 }
 
 html.is-leaving .transition-fade { 
     opacity: 0;
-    transform: translateY(0);
+    transform: translateY(-60px);
 }
 
 
-/* Define a transition duration during page visits */
-/* html.is-changing .transition-fade {
+
+/* SLIDE RIGHT ANIMATIONS */
+
+/* Chain Opacity to Elements Within the Page Animation */
+html.is-changing .transition-slide-right {
+    transition: all ease-in-out 1000ms;
     opacity: 1;
-    transition: 500ms;
-} */
+    transform: translateX(0);
+}
+
+/* Define the styles for the unloaded pages */
+html.is-animating .transition-slide-right {
+    opacity: 0;
+    transform: translateX(-30px);
+}
+
+html.is-leaving .transition-slide-right { 
+    opacity: 0;
+    transform: translateX(30px);
+}
