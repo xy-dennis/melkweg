@@ -7,17 +7,15 @@
     --yellow: #ffca37;
 }
 
-.black-bg {background-color: var(--black)}
-.coral-bg {background-color: var(--coral)}
 .coral {color: var(--coral)}
+.yellow {color: var(--yellow)}
 
+.black-bg {background-color: var(--black)}
+.white-bg {background-color: var(--white)}
+.coral-bg {background-color: var(--coral)}
+.yellow-bg {background-color: var(--yellow)}
 
-body {
-    color: #ffffff;
-    background-color: var(--black);
-}
-
-p {
+html, .body, p {
     color: #ffffff!important;
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
@@ -25,7 +23,12 @@ p {
     font-style: normal;
 }
 
-html, .body, h1, h2, h3, h4, h5, h6 {
+body {
+    color: #ffffff;
+    background-color: var(--black);
+}
+
+h1, h2, h3, h4, h5, h6, .uk-logo {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: normal;
@@ -43,12 +46,23 @@ h4, h5, h6 {
     line-height: 5vw;
 }
 
+hr, .uk-hr {border-top: 1px solid #ffffff14}
+
+.uk-logo, .uk-navbar-nav>li>a {
+    color: var(--white)
+}
+
 .uk-text-lead {
     font-weight: 100;
 }
 
 .stroke-title {
-    -webkit-text-stroke: 2px #fff;
+    -webkit-text-stroke: 2px var(--white);
+    color: transparent!important;
+}
+
+.stroke-title-dark {
+    -webkit-text-stroke: 2px var(--black);
     color: transparent!important;
 }
 
