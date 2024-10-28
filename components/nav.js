@@ -23,8 +23,8 @@ class Header extends HTMLElement {
 
             <div class="navbar-right">
                 <ul class="uk-navbar-nav">
-                    <li class="home"><a href="/">Home</a></li>
-                    <li class="about"><a href="/about.html">About</a></li>
+                    <li id="HomeNav" class="nav-item uk-active"><a href="/">Home</a></li>
+                    <li id="AboutNav" class="nav-item"><a href="/about.html">About</a></li>
                 </ul>
             </div>
 
