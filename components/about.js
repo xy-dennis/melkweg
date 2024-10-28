@@ -25,7 +25,7 @@ class About extends HTMLElement {
                         <a href="/" class="uk-button uk-button-primary transition-fade">View Work</a>
                     </div>
                     <div class="uk-width-1-2@m">
-                        <img src="img/meet-2.png" alt="About Image" class="transition-slide-right" loading="lazy" width="100%" height="auto">
+                        <img src="/img/meet-2.png" alt="About Image" class="transition-slide-right" loading="lazy" width="100%" height="auto">
                     </div>
                 </div>
             </div>

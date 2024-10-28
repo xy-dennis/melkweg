@@ -40,7 +40,7 @@ class Footer extends HTMLElement {
                         <a href="https://www.instagram.com/_melkweg_/" target="_blank">Instagram</a> | <a href="https://www.facebook.com/profile.php?id=100083020404622" target="_blank">Facebook</a>
                     </div>
                     <div class="uk-width-1-2@m uk-text-right uk-margin-small transition-fade">
-                        Copyright Melkweg &copy; Photography 2025 | <a href="/privacy.html">Privacy Policy</a>
+                        Copyright Melkweg &copy; Photography 2025 | <a href="/privacy/">Privacy Policy</a>
                     </div>
                 </div>
             </div>
