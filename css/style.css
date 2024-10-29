@@ -5,19 +5,22 @@
     --white: #ffffff;
     --coral: #d14244;
     --yellow: #ffca37;
+    --gradient: linear-gradient(-45deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
 }
-
 
 .coral {color: var(--coral)}
 .yellow {color: var(--yellow)}
+.gradient {color: var(--gradient)}
 
 .hover-coral:hover {-webkit-text-stroke: 2px var(--coral)}
 .hover-yellow:hover {-webkit-text-stroke: 2px var(--yellow)}
+.hover-gradient:hover {-webkit-text-stroke: 2px var(--gradient)}
 
 .black-bg {background-color: var(--black)}
 .white-bg {background-color: var(--white)}
 .coral-bg {background-color: var(--coral)}
 .yellow-bg {background-color: var(--yellow)}
+.gradient-bg {background: var(--gradient)}
 
 html, .body, p {
     color: var(--white)!important;
@@ -42,7 +45,7 @@ h1, h2, h3, h4, h5, h6, .uk-logo {
 
 h1, h2, h3 {
     font-size: 10vw;
-    line-height: 6vw;
+    line-height: 8vw;
 }
 
 h4, h5, h6 {
@@ -52,29 +55,26 @@ h4, h5, h6 {
 
 hr, .uk-hr {border-top: 1px solid #ffffff14}
 
-.uk-logo, .uk-navbar-nav > li > a {
+.uk-logo, .uk-navbar-nav > li > a,
+.uk-light .uk-logo, .uk-navbar-nav > li > a {
     color: var(--white)
 }
 
-.uk-text-lead {
-    font-weight: 100;
-}
+.uk-text-lead {font-weight: 100;}
 
-.stroke-title {
-    -webkit-text-stroke: 2px var(--white);
+.stroke-title, .stroke-title-dark {
+    -webkit-background-clip: text;
+    background-clip: text;
+    box-sizing: content-box;
+    display: inline;
     color: transparent!important;
 }
+
+.stroke-title {-webkit-text-stroke: 2px var(--white)}
+.stroke-title-dark {-webkit-text-stroke: 2px var(--black)}
 
 a, .stroke-title {transition: all ease-in-out 500ms}
-
-a:hover > .stroke-title {
-    text-decoration: none;
-}
-
-.stroke-title-dark {
-    -webkit-text-stroke: 2px var(--black);
-    color: transparent!important;
-}
+a:hover > .stroke-title {text-decoration: none}
 
 .transition-intro-shape:before {
     content: '';
@@ -83,9 +83,7 @@ a:hover > .stroke-title {
     background-color: var(--yellow);
 }
 
-.uk-navbar-nav > li > a {
-    transition: all 300ms;
-}
+.uk-navbar-nav > li > a {transition: all 300ms}
 
 .uk-navbar-nav > li.uk-active > a,
 .uk-light .uk-navbar-nav > li.uk-active > a {

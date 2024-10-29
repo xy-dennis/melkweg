@@ -19,7 +19,7 @@ class Footer extends HTMLElement {
                 background-color: var(--blue);
             }
         </style>
-        <div class="uk-section uk-padding-small" style="border-top: 1px solid #ffffff0a">
+        <div class="uk-section uk-padding-small">
             <div class="uk-container uk-container-expand">
                 <div class="uk-margin-large uk-padding" uk-grid>
                     <div class="uk-width-1-1 uk-text-center transition-fade">
