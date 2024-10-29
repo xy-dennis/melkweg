@@ -35,7 +35,7 @@ body {
     background-color: var(--black);
 }
 
-h1, h2, h3, h4, h5, h6, .uk-logo {
+h1, h2, h3, h4, h5, h6, .uk-logo, .uk-button {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: normal;
@@ -82,7 +82,9 @@ a:hover > .stroke-title {text-decoration: none}
     background-color: var(--yellow);
 }
 
-.uk-navbar-nav > li > a {transition: all 300ms}
+.uk-navbar-nav > li > a, .uk-button {
+    transition: all 300ms
+}
 
 .uk-navbar-nav > li.uk-active > a,
 .uk-light .uk-navbar-nav > li.uk-active > a {
@@ -106,4 +108,9 @@ a:hover > .stroke-title {text-decoration: none}
     position: absolute;
     bottom: 25px;
     z-index: 790;
+}
+
+.uk-light .uk-button {
+    background-color: var(--white);
+    border-radius: 25px;
 }

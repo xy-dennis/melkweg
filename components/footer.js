@@ -20,7 +20,7 @@ class Footer extends HTMLElement {
             }
         </style>
         <div class="uk-section uk-padding-small">
-            <div class="uk-container uk-container-expand">
+            <div class="uk-container uk-container-expand uk-margin-large-top">
                 <div class="uk-margin-large uk-padding" uk-grid>
                     <div class="uk-width-1-1 uk-text-center transition-fade">
                         <h3>get in touch</h3>

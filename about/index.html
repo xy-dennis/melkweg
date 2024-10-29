@@ -31,7 +31,7 @@
 
         <!-- Components -->
         <script src="/components/nav.js"></script>
-        <script src="/components/about.js"></script>
+        <script src="/components/contact.js"></script>
         <script src="/components/footer.js"></script>
 
         <style type="text/css">
@@ -48,15 +48,24 @@
             <!-- Content Section -->
             <section id="About" class="transition-intro-shape uk-section uk-height-viewport uk-position-relative uk-padding-remove-top coral-bg">
                 <div class="uk-container uk-container-expand uk-position-center">
-                    <div class="uk-flex-middle uk-flex" uk-grid>
-                        <div class="uk-width-1-2">
+                    <div class="uk-flex-middle uk-height-match uk-flex" uk-grid>
+                        <div class="uk-width-1-2@m">
                             <h1 class="transition-fade" style="color: white">About</h1>
                             <h2 class="transition-fade stroke-title">Melkweg</h2>
+                            <p class="transition-fade uk-text-lead uk-margin-large-top">
+                                Melkweg Photography is run and managed by South African Photographer Janelka Lubbinge.
+                            </p>
                         </div>
-                        <div class="uk-width-1-2">
+                        <div class="uk-width-1-2@m uk-margin-auto uk-text-center">
                             <p class="transition-fade uk-text-lead">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse maximus posuere turpis in
-                                malesuada. Proin non molestie erat, eget luctus odio. Quisque vel consectetur nisl, a efficitur sem.
+                                <img src="/img/about-main-776.png"
+                                     style="max-height: 776px; width: auto"
+                                     alt="About Image" 
+                                     class="transition-slide-right" 
+                                     loading="lazy" 
+                                     width="100%" 
+                                     height="800"
+                                     uk-img>
                             </p>
                         </div>
                     </div>
@@ -64,7 +73,7 @@
             </section>
             <!-- END - Content Section -->
 
-            <about-component id="AboutComponent" class="coral-bg"></about-component>
+            <contact-component id="ContactComponent" class="coral-bg"></contact-component>
 
             <footer-component id="FooterComponent" class="coral-bg"></footer-component>
 

@@ -19,10 +19,9 @@ class About extends HTMLElement {
                     <div class="uk-width-1-2@m">
                         <h4 class="transition-fade">About</h4>
                         <p class="uk-text-lead transition-fade">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse maximus posuere turpis in
-                            malesuada. Proin non molestie erat, eget luctus odio. Quisque vel consectetur nisl, a efficitur sem.
+                            Melkweg Photography is run and managed by South African Photographer Janelka Lubbinge. 
                         </p>
-                        <a href="/" class="uk-button uk-button-primary transition-fade">View Work</a>
+                        <a href="/about/" class="uk-button uk-button-primary transition-fade">More About Melkweg</a>
                     </div>
                     <div class="uk-width-1-2@m">
                         <img src="/img/meet-2.png" alt="About Image" class="transition-slide-right" loading="lazy" width="100%" height="auto">
