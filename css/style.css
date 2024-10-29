@@ -7,8 +7,12 @@
     --yellow: #ffca37;
 }
 
+
 .coral {color: var(--coral)}
 .yellow {color: var(--yellow)}
+
+.hover-coral:hover {-webkit-text-stroke: 2px var(--coral)}
+.hover-yellow:hover {-webkit-text-stroke: 2px var(--yellow)}
 
 .black-bg {background-color: var(--black)}
 .white-bg {background-color: var(--white)}
@@ -16,7 +20,7 @@
 .yellow-bg {background-color: var(--yellow)}
 
 html, .body, p {
-    color: #ffffff!important;
+    color: var(--white)!important;
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
     font-weight: normal;
@@ -24,7 +28,7 @@ html, .body, p {
 }
 
 body {
-    color: #ffffff;
+    color: var(--white);
     background-color: var(--black);
 }
 
@@ -48,7 +52,7 @@ h4, h5, h6 {
 
 hr, .uk-hr {border-top: 1px solid #ffffff14}
 
-.uk-logo, .uk-navbar-nav>li>a {
+.uk-logo, .uk-navbar-nav > li > a {
     color: var(--white)
 }
 
@@ -59,6 +63,12 @@ hr, .uk-hr {border-top: 1px solid #ffffff14}
 .stroke-title {
     -webkit-text-stroke: 2px var(--white);
     color: transparent!important;
+}
+
+a, .stroke-title {transition: all ease-in-out 500ms}
+
+a:hover > .stroke-title {
+    text-decoration: none;
 }
 
 .stroke-title-dark {
@@ -77,15 +87,14 @@ hr, .uk-hr {border-top: 1px solid #ffffff14}
     transition: all 300ms;
 }
 
-
 .uk-navbar-nav > li.uk-active > a,
 .uk-light .uk-navbar-nav > li.uk-active > a {
-    color: #ffffff;
+    color: var(--white);
     position: relative;
 }
 
 .uk-navbar-nav > li:hover > a {
-    color: #ffffff;
+    color: var(--white);
     opacity: 0.8;
 }
 
@@ -94,12 +103,10 @@ hr, .uk-hr {border-top: 1px solid #ffffff14}
     content: '';
     transition: all linear 300ms;
     height: 2px;
-    background-color: #ffffff;
+    background-color: var(--white);
     width: 100%;
     display: block;
     position: absolute;
     bottom: 25px;
     z-index: 790;
 }
-
-  

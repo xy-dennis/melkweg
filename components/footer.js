@@ -21,18 +21,14 @@ class Footer extends HTMLElement {
         </style>
         <div class="uk-section uk-padding-small" style="border-top: 1px solid #ffffff0a">
             <div class="uk-container uk-container-expand">
-                <div uk-grid>
-                    <div class="uk-width-1-4@m transition-fade">
-                        One
+                <div class="uk-margin-large uk-padding" uk-grid>
+                    <div class="uk-width-1-1 uk-text-center transition-fade">
+                        <h3>get in touch</h3>
                     </div>
-                    <div class="uk-width-1-4@m transition-fade">
-                        Two
-                    </div>
-                    <div class="uk-width-1-4@m transition-fade">
-                        Three
-                    </div>
-                    <div class="uk-width-1-4@m transition-fade">
-                        Four
+                    <div class="uk-width-1-1 uk-text-center transition-fade">
+                        <a href="mailto:info@melkie.co.za" class="uk-link-reset">
+                            <h3 id="footerMailto" class="stroke-title hover-color">info@melkie.co.za</h3>
+                        </a>
                     </div>
                 </div>
                 <div class="uk-text-small" uk-grid>

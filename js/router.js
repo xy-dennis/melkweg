@@ -6,21 +6,29 @@ swup.hooks.on('page:view', () => {
         $("#HomeNav").addClass("uk-active") // Active
         $("#AboutNav").removeClass("uk-active")
         $("#ContactNav").removeClass("uk-active")
+        $("#footerMailto").addClass("hover-coral")
+        $("#footerMailto").removeClass("hover-yellow")
     }
     else if (currentPage == "/about/") { // About Page
         $("#HomeNav").removeClass("uk-active")
         $("#AboutNav").addClass("uk-active") // Active
         $("#ContactNav").removeClass("uk-active")
+        $("#footerMailto").removeClass("hover-coral")
+        $("#footerMailto").addClass("hover-yellow")
     } 
     else if (currentPage == "/contact/") { // Contact Page
         $("#HomeNav").removeClass("uk-active")
         $("#AboutNav").removeClass("uk-active")
         $("#ContactNav").addClass("uk-active") // Active
+        $("#footerMailto").removeClass("hover-coral")
+        $("#footerMailto").addClass("hover-yellow")
     }
     else if (currentPage == "/privacy/") { // Privacy Page
         $("#HomeNav").removeClass("uk-active")
         $("#AboutNav").removeClass("uk-active")
         $("#ContactNav").removeClass("uk-active")
+        $("#footerMailto").removeClass("hover-coral")
+        $("#footerMailto").addClass("hover-yellow")
     }
     
     console.log("Current Page " + currentPage);
