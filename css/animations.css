@@ -61,12 +61,12 @@ html.is-leaving .transition-fade {
 }
 
 
-/* FADE LONG ANIMATIONS */
+/* FADE Slide Bottom -  LONG ANIMATIONS */
 
 /* Chain Opacity to Elements Within the Page Animation */
 html.is-changing .transition-fade-long {
     transition: all ease-in-out 1200ms;
-    transition-delay: 300ms;
+    transition-delay: 150ms;
     opacity: 1;
     transform: translateY(0);
 }
@@ -74,12 +74,13 @@ html.is-changing .transition-fade-long {
 /* Define the styles for the unloaded pages */
 html.is-animating .transition-fade-long {
     opacity: 0;
-    transform: translateY(120px);
+    transform: translateY(160px);
 }
 
 html.is-leaving .transition-fade-long { 
+    transition-delay: 80ms;
     opacity: 0;
-    transform: translateY(-120px);
+    transform: translateY(160px);
 }
 
 

@@ -8,9 +8,9 @@
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.5.9/css/uikit.min.css"/>
         
@@ -48,12 +48,12 @@
             <!-- Content Section -->
             <section id="About" class="transition-intro-shape uk-section uk-height-viewport uk-position-relative uk-padding-remove-top coral-bg">
                 <div class="uk-container uk-container-expand uk-position-center">
-                    <div class="uk-flex-middle uk-height-match uk-flex" uk-grid>
+                    <div class="uk-flex-middle uk-height-match uk-grid-collapse uk-flex" uk-grid>
                         <div class="uk-width-1-2@m">
                             <h1 class="transition-fade" style="color: white">About</h1>
                             <h2 class="transition-fade stroke-title">Melkweg</h2>
                             <p class="transition-fade uk-text-lead uk-margin-large-top">
-                                Melkweg Photography is run and managed by South African Photographer Janelka Lubbinge.
+                                I just love taking photos. If you want to have fun and feel like colaborating. We can.
                             </p>
                         </div>
                         <div class="uk-width-1-2@m uk-margin-auto uk-text-center">
@@ -72,7 +72,22 @@
             </section>
             <!-- END - Content Section -->
 
-            <contact-component id="ContactComponent" class="coral-bg"></contact-component>
+            <!-- Pre-Footer Components -->
+            <section class="uk-section uk-padding-remove border-top coral-bg">
+                <div class="uk-container uk-container-expand">
+                    <div class="uk-grid-collapse" uk-grid>
+                        <!-- About Component -->
+                        <div class="uk-width-1-2@m uk-padding-large border-right">
+                            <about-component id="AboutComponent" class="coral-bg"></about-component>
+                        </div>
+                        <!-- Contact Component -->
+                        <div class="uk-width-1-2@m uk-padding-large">
+                            <contact-component id="ContactComponent" class="coral-bg"></contact-component>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END - Pre-Footer Components -->
 
             <footer-component id="FooterComponent" class="coral-bg"></footer-component>
 

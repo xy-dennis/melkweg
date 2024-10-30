@@ -6,29 +6,26 @@ class About extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <style>
-            .coral-bg > .uk-section {
+            .coral-bg > .component-bg {
                 background-color: var(--coral);
             }
-            .black-bg > .uk-section {
+            .black-bg > .component-bg {
                 background-color: var(--black);
             }
+            .coral-bg > .component-bg > .uk-button {
+                color: var(--coral);
+            }
+            .black-bg > .component-bg > .uk-button {
+                color: var(--black);
+            }
         </style>
-        <section class="uk-section black-bg">
-            <div class="uk-container">
-                <div class="uk-height-match uk-flex-middle" uk-grid>
-                    <div class="uk-width-1-2@m">
-                        <h4 class="transition-fade">About</h4>
-                        <p class="uk-text-lead transition-fade">
-                            Melkweg Photography is run and managed by South African Photographer Janelka Lubbinge. 
-                        </p>
-                        <a href="/about/" class="uk-button uk-button-primary transition-fade">More About Melkweg</a>
-                    </div>
-                    <div class="uk-width-1-2@m">
-                        <img src="/img/meet-2.png" alt="About Image" class="transition-slide-right" loading="lazy" width="100%" height="auto">
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div id="preFooterAbout" class="component-bg uk-text-center">
+            <h4 class="transition-fade">About</h4>
+            <p class="transition-fade uk-margin-auto uk-text-lead uk-width-xlarge">
+                My life is a rich tapestry of experiences. Just like yours. We can have fun and make art.
+            </p>
+            <a href="/about/" class="uk-button uk-button-primary transition-fade">More About Melkweg</a>
+        </div>
         `;
     }
 }
