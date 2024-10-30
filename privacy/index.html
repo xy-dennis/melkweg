@@ -9,7 +9,7 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.5.9/css/uikit.min.css"/>
 
@@ -28,19 +28,13 @@
         <script defer src="/js/main.js"></script>
 
         <!-- Components -->
-        <script src="/components/nav.js"></script>
-        <script src="/components/about.js"></script>
-        <script src="/components/footer.js"></script>
+        <script src="components/nav.js"></script>
+        <script src="components/about.js"></script>
+        <script src="components/contact.js"></script>
+        <script src="components/footer.js"></script>
 
         <style type="text/css">
-            a {
-                color: #ffffff;
-                text-decoration: underline;
-            }
-            a:hover {
-                color: #ffffff83;
-                text-decoration: underline;
-            }
+
         </style>
 
     </head>
@@ -63,6 +57,7 @@
             </section>
             <!-- END - Content Section -->
 
+            <!-- Privacy Content -->
             <section class="uk-section black-bg">
                 <div class="uk-container">
 
@@ -880,6 +875,26 @@
 
                 </div>
             </section>
+            <!-- END - Content -->
+
+            <collection-component id="collectionComponent" class="black-bg"></collection-component>
+
+            <!-- Pre-Footer Components -->
+            <section class="uk-section uk-padding-remove border-top transition-border black-bg">
+                <div class="uk-container uk-container-expand">
+                    <div class="uk-grid-collapse" uk-grid>
+                        <!-- About Component -->
+                        <div class="uk-width-1-2@m uk-padding-large border-right transition-border">
+                            <about-component id="AboutComponent" class="black-bg"></about-component>
+                        </div>
+                        <!-- Contact Component -->
+                        <div class="uk-width-1-2@m uk-padding-large">
+                            <contact-component id="ContactComponent" class="black-bg"></contact-component>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END - Pre-Footer Components -->
 
             <footer-component id="FooterComponent" class="black-bg"></footer-component>
 

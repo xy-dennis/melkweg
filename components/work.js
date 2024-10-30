@@ -1,4 +1,4 @@
-class Contact extends HTMLElement {
+class Work extends HTMLElement {
     constructor() {
         super();
     }
@@ -19,17 +19,17 @@ class Contact extends HTMLElement {
                 color: var(--black);
             }
         </style>
-        <div id="preFooterContact" class="component-bg uk-text-center">
-            <h4 class="transition-fade">Contact</h4>
+        <div id="preWorkAbout" class="component-bg uk-text-center">
+            <h4 class="transition-fade">Work</h4>
             <p class="transition-fade uk-margin-auto uk-text-lead uk-width-xlarge">
-                Let's just have fun and make something cool. Want to hang out?
+                I have had lots of moments, here are some of them I can share
             </p>
-            <a href="/contact/" class="uk-button uk-button-primary transition-fade">Contact Melkweg</a>
+            <a href="/about/" class="uk-button uk-button-primary transition-fade">Some Past Things</a>
         </div>
         `;
     }
 }
+  
+customElements.define('work-component', Work);
 
-customElements.define('contact-component', Contact);
-
-console.log('Contact Loaded')
+console.log('Work Loaded')

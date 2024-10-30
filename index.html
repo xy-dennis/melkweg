@@ -9,7 +9,7 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.5.9/css/uikit.min.css"/>
 
@@ -31,15 +31,12 @@
         <!-- Components -->
         <script src="components/nav.js"></script>
         <script src="components/about.js"></script>
+        <script src="components/work.js"></script>
         <script src="components/contact.js"></script>
         <script src="components/footer.js"></script>
 
-        <style type="text/css">
-
-        </style>
-
     </head>
-    <body class="uk-light">
+    <body id="weAreHome" class="uk-light">
 
         <header-component></header-component>
         
@@ -61,11 +58,11 @@
             <collection-component id="collectionComponent" class="black-bg"></collection-component>
 
             <!-- Pre-Footer Components -->
-            <section class="uk-section uk-padding-remove border-top black-bg">
+            <section class="uk-section uk-padding-remove border-top transition-border black-bg">
                 <div class="uk-container uk-container-expand">
                     <div class="uk-grid-collapse" uk-grid>
                         <!-- About Component -->
-                        <div class="uk-width-1-2@m uk-padding-large border-right">
+                        <div class="uk-width-1-2@m uk-padding-large border-right transition-border">
                             <about-component id="AboutComponent" class="black-bg"></about-component>
                         </div>
                         <!-- Contact Component -->

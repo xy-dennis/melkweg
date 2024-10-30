@@ -15,6 +15,7 @@ swup.hooks.on('page:view', () => {
         $("#ContactNav").removeClass("uk-active")
         $("#footerMailto").removeClass("hover-coral")
         $("#footerMailto").addClass("hover-yellow")
+        $("#AboutFooterLink").addClass("uk-hidden")
     } 
     else if (currentPage == "/contact/") { // Contact Page
         $("#HomeNav").removeClass("uk-active")
@@ -22,6 +23,7 @@ swup.hooks.on('page:view', () => {
         $("#ContactNav").addClass("uk-active") // Active
         $("#footerMailto").removeClass("hover-coral")
         $("#footerMailto").addClass("hover-yellow")
+        $("#ContactFooterLink").addClass("uk-hidden")
     }
     else if (currentPage == "/privacy/") { // Privacy Page
         $("#HomeNav").removeClass("uk-active")
@@ -29,10 +31,10 @@ swup.hooks.on('page:view', () => {
         $("#ContactNav").removeClass("uk-active")
         $("#footerMailto").removeClass("hover-coral")
         $("#footerMailto").addClass("hover-yellow")
+        $("#PrivacyFooterLink").addClass("uk-hidden")
     }
     
     console.log("Current Page " + currentPage);
-
 });
-  
+
 console.log("Router JS Fired");

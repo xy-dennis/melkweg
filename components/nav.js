@@ -23,8 +23,8 @@ class Header extends HTMLElement {
 
             <div class="navbar-right">
                 <ul class="uk-navbar-nav">
-                    <li id="HomeNav" class="nav-item"><a href="/" aria-label="Melkweg Home">Home</a></li>
-                    <li id="AboutNav" class="nav-item"><a href="/about/" aria-label="About Melkweg">Fun</a></li>
+                    <li id="HomeNav" class="nav-item home-hide"><a href="/" aria-label="Melkweg Home">Home</a></li>
+                    <li id="AboutNav" class="nav-item"><a href="/about/" aria-label="About Melkweg">About</a></li>
                     <li id="ContactNav" class="nav-item"><a href="/about/" aria-label="Contact Melkweg">Contact</a></li>
                 </ul>
             </div>

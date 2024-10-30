@@ -9,6 +9,7 @@ if (currentPage == "/") { // Home Page
     $("#ContactNav").removeClass("uk-active")
     $("#footerMailto").addClass("hover-coral") // Coral Home
     $("#footerMailto").removeClass("hover-yellow")
+    $("#HomeFooterLink").addClass("uk-hidden")
 } else {
     console.log("Not the Home Page");
 }

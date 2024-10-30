@@ -20,25 +20,28 @@ class Footer extends HTMLElement {
             }
         </style>
         <footer>
-            <section class="uk-section border-top uk-padding-small">
+            <section class="uk-section border-top uk-padding-small transition-border">
                 <div class="uk-container uk-container-expand uk-margin-large-bottom uk-margin-large-top">
                     <div class="uk-margin-large uk-padding" uk-grid>
                         <div class="uk-width-1-1 uk-text-center transition-fade">
-                            <h3>speel tyd</h3>
+                            <h3>Get in touch</h3>
                         </div>
                         <div class="uk-width-1-1 uk-text-center transition-fade">
-                            <a href="mailto:info@melkie.co.za" class="uk-link-reset">
+                            <a href="mailto:info@melkie.co.za" class="uk-link-reset" target="_blank">
                                 <h3 id="footerMailto" class="stroke-title hover-color">info@melkie.co.za</h3>
                             </a>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="uk-section border-top uk-padding-small">
+            <section class="uk-section border-top uk-padding-small transition-border">
                 <div class="uk-container uk-container-expand">
                     <div class="uk-text-small" uk-grid>
                         <div class="uk-width-1-2@m uk-margin-small-top uk-margin-small-bottom transition-fade">
-                            <a href="https://www.instagram.com/_melkweg_/" target="_blank">Instagram</a> | <a href="https://www.facebook.com/profile.php?id=100083020404622" target="_blank">Facebook</a>
+                            <span id="HomeFooterLink" class="home-hide"><a href="/">Home</a> | </span>
+                            <span id="AboutFooterLink"><a href="/about/">About</a> | </span>
+                            <a href="https://www.instagram.com/_melkweg_/" target="_blank">Instagram</a> | 
+                            <a href="https://www.facebook.com/profile.php?id=100083020404622" target="_blank">Facebook</a> 
                         </div>
                         <div class="uk-width-1-2@m uk-text-right uk-margin-small-top uk-margin-small-bottom transition-fade">
                             Copyright Melkweg &copy; Photography 2025 | <a href="/privacy/">Privacy Policy</a>

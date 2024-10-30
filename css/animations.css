@@ -51,6 +51,7 @@ html.is-changing .transition-fade {
 
 /* Define the styles for the unloaded pages */
 html.is-animating .transition-fade {
+    transition-delay: 25ms;
     opacity: 0;
     transform: translateY(60px);
 }
@@ -66,7 +67,6 @@ html.is-leaving .transition-fade {
 /* Chain Opacity to Elements Within the Page Animation */
 html.is-changing .transition-fade-long {
     transition: all ease-in-out 1200ms;
-    transition-delay: 150ms;
     opacity: 1;
     transform: translateY(0);
 }
@@ -104,4 +104,24 @@ html.is-animating .transition-slide-right {
 html.is-leaving .transition-slide-right { 
     opacity: 0;
     transform: translateX(30px);
+}
+
+
+
+/* BORDER ANIMATION */
+
+/* Border Page Animation */
+html.is-changing .transition-border {
+    transition: border ease-in-out 1100ms;
+    transition-delay: 220ms;
+    border: 1px;
+}
+
+/* Define the styles for the unloaded pages */
+html.is-animating .transition-border {
+    border: 0;
+}
+
+html.is-leaving .transition-border {
+    border: 0;
 }

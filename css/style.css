@@ -25,9 +25,9 @@
 
 html, .body, p {
     color: var(--white)!important;
-    /* font-family: "Quicksand", sans-serif; */
+    font-family: "Quicksand", sans-serif;
     /* font-family: "Nunito", sans-serif; */
-    font-family: "M PLUS Rounded 1c", sans-serif;
+    /* font-family: "M PLUS Rounded 1c", sans-serif; */
     font-optical-sizing: auto;
     font-weight: normal;
     font-style: normal;
@@ -49,12 +49,12 @@ h1, h2, h3, h4, h5, h6, .uk-logo, .uk-button {
 
 h1, h2, h3 {
     font-size: 10vw;
-    line-height: 6vw;
+    line-height: 5vw;
 }
 
 h4, h5, h6 {
     font-size: 6vw;
-    line-height: 5vw;
+    line-height: 4vw;
 }
 
 hr, .uk-hr {border-top: var(--border)}
