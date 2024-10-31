@@ -29,11 +29,11 @@
         <!-- <script src="js/router.js"></script> -->
 
         <!-- Components -->
-        <script src="components/nav.js"></script>
-        <script src="components/about.js"></script>
-        <script src="components/work.js"></script>
-        <script src="components/contact.js"></script>
-        <script src="components/footer.js"></script>
+        <script src="/components/nav.js"></script>
+        <script src="/components/about.js"></script>
+        <script src="/components/work.js"></script>
+        <script src="/components/contact.js"></script>
+        <script src="/components/footer.js"></script>
 
     </head>
     <body class="uk-light">
@@ -71,17 +71,14 @@
             <!-- END - Content Section -->
 
             <!-- Pre-Footer Components -->
-            <section class="uk-section uk-padding-remove border-top coral-bg transition-border">
+            <section class="uk-section uk-section-expand uk-padding-remove border-top transition-border coral-bg">
                 <div class="uk-container uk-container-expand">
-                    <div class="uk-grid-collapse" uk-grid>
-                        <!-- About Component -->                        
-                        <div class="uk-width-1-2@m uk-padding-large uk-position-relative border-right transition-border">
-                            <about-component id="AboutComponent" class="coral-bg"></about-component>
-                        </div>
+
+                    <div class="uk-child-width-1-2@s uk-grid-match uk-grid-collapse" uk-grid>
+                        <!-- Work Component -->
+                        <work-component id="WorkComponent" class="coral-bg border-right transition-border"></work-component>
                         <!-- Contact Component -->
-                        <div class="uk-width-1-2@m uk-padding-large uk-position-relative">
-                            <contact-component id="ContactComponent" class="coral-bg"></contact-component>
-                        </div>
+                        <contact-component id="ContactComponent" class="coral-bg"></contact-component>
                     </div>
                 </div>
             </section>

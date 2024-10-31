@@ -5,13 +5,15 @@ class Contact extends HTMLElement {
 
     connectedCallback() {
         this.innerHTML = `
-        <style></style>
-        <div id="preFooterContact" class="component-bg uk-text-center">
-            <h4 class="transition-fade">Contact</h4>
-            <p class="transition-fade uk-margin-auto uk-text-lead uk-width-xlarge">
-                Let's just have fun and make something cool. Want to hang out?
-            </p>
-            <a href="/contact/" class="uk-button uk-button-primary transition-fade">Contact Melkweg</a>
+        <div id="preFooterContact" class="component-bg uk-text-center transition-fade">
+            <a id="AboutComponentLink" href="/" class="uk-link-reset">
+                <div class="uk-card uk-card-hover uk-padding-large uk-card-body">
+                    <h4 class="stroke-title uk-margin-top transition-fade">Contact</h4>
+                    <p class="transition-fade uk-margin-auto uk-margin-bottom uk-text-lead uk-width-xlarge">
+                        Let's just have fun and make something cool. Want to hang out?
+                    </p>
+                </div>
+            </a>
         </div>
         `;
     }

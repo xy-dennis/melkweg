@@ -1,12 +1,13 @@
 /* Global */
 :root {
-    --black: #131313;
+    --black: #1c1c1c;
     --blue: #1e90ff;
     --white: #ffffff;
     --coral: #d14244;
     --yellow: #ffca37;
     --border: #ffffff2e;
     --transparent: transparent;
+    --transition: all ease-in-out 500ms;
     --gradient: linear-gradient(-45deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
 }
 
@@ -85,7 +86,8 @@ hr, .uk-hr {border-top: 1px solid var(--border)}
 .stroke-title {-webkit-text-stroke: 2px var(--white)}
 .stroke-title-dark {-webkit-text-stroke: 2px var(--black)}
 
-a, .stroke-title {transition: all ease-in-out 500ms}
+/* Global Transitions */
+a, .stroke-title, .uk-card-hover, .uk-card, h2, h3, h4, p {transition: var(--transition)}
 a:hover > .stroke-title {text-decoration: none}
 
 .transition-intro-shape:before {
@@ -96,7 +98,7 @@ a:hover > .stroke-title {text-decoration: none}
 }
 
 .uk-navbar-nav > li > a, .uk-button {
-    transition: all 300ms
+    transition: var(--transition);
 }
 
 .uk-navbar-nav > li.uk-active > a,
@@ -147,6 +149,44 @@ a:hover > .stroke-title {text-decoration: none}
     bottom: 0;
     display: flex;
     align-items: center;
+}
+
+.black-bg > .component-bg > a > .uk-card,
+.black-bg > .component-bg > a > .uk-card .uk-card-hover {
+    background: var(--black);
+    box-shadow: none;
+}
+
+.coral-bg > .component-bg > a > .uk-card,
+.coral-bg > .component-bg > a > .uk-card .uk-card-hover {
+    background: var(--coral);
+    box-shadow: none;
+}
+
+/* Component Hover Color */
+.coral-bg > .component-bg > a > .uk-card-hover:not(.uk-card-default):not(.uk-card-primary):not(.uk-card-secondary):hover {
+    background-color: var(--coral);
+    box-shadow: none;
+}
+
+.black-bg > .component-bg > a > .uk-card-hover:not(.uk-card-default):not(.uk-card-primary):not(.uk-card-secondary):hover {
+    background-color: var(--black);
+    box-shadow: none;
+}
+
+.black-bg > .component-bg > a > .uk-card-hover:not(.uk-card-default):not(.uk-card-primary):not(.uk-card-secondary):hover > h4 {
+    -webkit-text-stroke: 2px var(--coral) !important;
+    font-size: 7vw!important 
+}
+
+.coral-bg > .component-bg > a > .uk-card-hover:not(.uk-card-default):not(.uk-card-primary):not(.uk-card-secondary):hover > h4 {
+    -webkit-text-stroke: 2px var(--yellow) !important;
+    font-size: 7vw!important
+}
+
+.black-bg > .component-bg > a > .uk-card-hover:not(.uk-card-default):not(.uk-card-primary):not(.uk-card-secondary):hover > p, 
+.coral-bg > .component-bg > a > .uk-card-hover:not(.uk-card-default):not(.uk-card-primary):not(.uk-card-secondary):hover > p {
+    /* color: green!important; */
 }
 
 /* move this at some point */
