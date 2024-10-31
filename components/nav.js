@@ -15,7 +15,7 @@ class Header extends HTMLElement {
             .navbar-right {right: 25px}
         </style>
 
-        <nav class="">
+        <nav class="uk-visible@l">
 
             <div class="navbar-left">
                 <a class="uk-navbar-item uk-logo" href="/" aria-label="Back to Home">MW</a>

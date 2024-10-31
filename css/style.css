@@ -5,7 +5,8 @@
     --white: #ffffff;
     --coral: #d14244;
     --yellow: #ffca37;
-    --border: 1px solid #ffffff2e;
+    --border: #ffffff2e;
+    --transparent: transparent;
     --gradient: linear-gradient(-45deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
 }
 
@@ -23,7 +24,7 @@
 .yellow-bg {background-color: var(--yellow)}
 .gradient-bg {background: var(--gradient)}
 
-html, .body, p {
+html, .body, p, a {
     color: var(--white)!important;
     font-family: "Quicksand", sans-serif;
     /* font-family: "Nunito", sans-serif; */
@@ -57,11 +58,11 @@ h4, h5, h6 {
     line-height: 4vw;
 }
 
-hr, .uk-hr {border-top: var(--border)}
-.border-top {border-top: var(--border)}
-.border-right {border-right: var(--border)}
-.border-bottom {border-bottom: var(--border)}
-.border-left {border-left: var(--border)}
+hr, .uk-hr {border-top: 1px solid var(--border)}
+.border-top {border-top: 1px solid var(--border)}
+.border-right {border-right: 1px solid var(--border)}
+.border-bottom {border-bottom: 1px solid var(--border)}
+.border-left {border-left: 1px solid var(--border)}
 
 .uk-logo, .uk-navbar-nav > li > a,
 .uk-light .uk-logo, .uk-navbar-nav > li > a {
@@ -123,6 +124,49 @@ a:hover > .stroke-title {text-decoration: none}
 }
 
 .uk-light .uk-button {
-    background-color: var(--white);
+    background-color: var(--transparent);
     border-radius: 25px;
+    border: 1px solid var(--border);
+}
+
+/* .uk-light .uk-button { */
+    /* background-color: var(--white); */
+    /* border-radius: 25px; */
+/* } */
+
+.mk-button {
+    font-size: 2.2rem;
+    border: 2px solid var(--white);
+}
+
+.mk-button {
+    background-color: green;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* move this at some point */
+@media only screen and (max-width: 600px) {
+
+    h1, h2, h3 {
+        font-size: 7vw;
+        line-height: 1vw;
+        display: inline;
+        background-color: var(--coral);
+    }
+
+    h4, h5, h6 {
+        font-size: 1.9rem;
+        line-height: 4vw;
+    }
+
+    .uk-text-lead {
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+
 }
