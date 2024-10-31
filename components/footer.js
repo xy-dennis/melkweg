@@ -37,13 +37,18 @@ class Footer extends HTMLElement {
             <section class="uk-section border-top uk-padding-small transition-border">
                 <div class="uk-container uk-container-expand">
                     <div class="uk-text-small" uk-grid>
-                        <div class="uk-width-1-2@m uk-margin-small-top uk-margin-small-bottom transition-fade">
+                        <div class="uk-width-1-3@m uk-margin-small-top uk-margin-small-bottom transition-fade">
                             <span id="HomeFooterLink" class="home-hide"><a href="/">Home</a> | </span>
                             <span id="AboutFooterLink"><a href="/about/">About</a> | </span>
                             <a href="https://www.instagram.com/_melkweg_/" target="_blank">Instagram</a> | 
                             <a href="https://www.facebook.com/profile.php?id=100083020404622" target="_blank">Facebook</a> 
                         </div>
-                        <div class="uk-width-1-2@m uk-text-right uk-margin-small-top uk-margin-small-bottom transition-fade">
+                        <div class="uk-width-expand uk-text-center">
+                            <a href="#" class="mk-to-top-btn" uk-scroll>
+                                <span uk-icon="icon: arrow-up; ratio: 2"></span>
+                            </a>
+                        </div>
+                        <div class="uk-width-1-3@m uk-text-right uk-margin-small-top uk-margin-small-bottom transition-fade">
                             Copyright Melkweg &copy; Photography 2025 | <a href="/privacy/">Privacy Policy</a>
                         </div>
                     </div>

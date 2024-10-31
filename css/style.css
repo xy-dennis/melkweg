@@ -87,7 +87,7 @@ hr, .uk-hr {border-top: 1px solid var(--border)}
 .stroke-title-dark {-webkit-text-stroke: 2px var(--black)}
 
 /* Global Transitions */
-a, .stroke-title, .uk-card-hover, .uk-card, h2, h3, h4, p {transition: var(--transition)}
+a, .stroke-title, .uk-card-hover, .uk-card, h2, h3, h4, p, .uk-icon {transition: var(--transition)}
 a:hover > .stroke-title {text-decoration: none}
 
 .transition-intro-shape:before {
@@ -176,18 +176,43 @@ a:hover > .stroke-title {text-decoration: none}
 
 .black-bg > .component-bg > a > .uk-card-hover:not(.uk-card-default):not(.uk-card-primary):not(.uk-card-secondary):hover > h4 {
     -webkit-text-stroke: 2px var(--coral) !important;
-    font-size: 7vw!important 
+    font-size: 6.5vw!important 
 }
 
 .coral-bg > .component-bg > a > .uk-card-hover:not(.uk-card-default):not(.uk-card-primary):not(.uk-card-secondary):hover > h4 {
     -webkit-text-stroke: 2px var(--yellow) !important;
-    font-size: 7vw!important
+    font-size: 6.5vw!important
 }
 
 .black-bg > .component-bg > a > .uk-card-hover:not(.uk-card-default):not(.uk-card-primary):not(.uk-card-secondary):hover > p, 
 .coral-bg > .component-bg > a > .uk-card-hover:not(.uk-card-default):not(.uk-card-primary):not(.uk-card-secondary):hover > p {
     /* color: green!important; */
 }
+
+.mk-to-top-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: 1px solid var(--border);
+    margin: auto;
+    margin-top: -45px;
+    text-align: center;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    transition: var(--transition);
+    /* background-image: url(/img/interface/to-top-icon.svg); */
+    /* background-position: center center; */
+    /* background-repeat: no-repeat; */
+    /* background-blend-mode: soft-light; */
+}
+
+.black-bg .mk-to-top-btn:hover > span {color: var(--coral)}
+.coral-bg .mk-to-top-btn:hover > span {color: var(--yellow)}
+
+.coral-bg .mk-to-top-btn {background-color: var(--coral)}
+.black-bg .mk-to-top-btn {background-color: var(--black)}
 
 /* move this at some point */
 @media only screen and (max-width: 600px) {
