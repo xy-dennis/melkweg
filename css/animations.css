@@ -107,6 +107,26 @@ html.is-leaving .transition-slide-right {
 }
 
 
+/* SLIDE LEFT ANIMATIONS */
+
+/* Chain Opacity to Elements Within the Page Animation */
+html.is-changing .transition-slide-right {
+    transition: all ease-in-out 200ms;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Define the styles for the unloaded pages */
+html.is-animating .transition-slide-right {
+    /* opacity: 0; */
+    transform: translateX(100px);
+}
+
+html.is-leaving .transition-slide-right { 
+    /* opacity: 0; */
+    transform: translateX(-150px);
+}
+
 
 /* BORDER ANIMATION */
 

@@ -5,6 +5,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <meta name="description" content="Home Description" data-no-swup>
+
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,8 +24,10 @@
         <link href="css/animations.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
 
-        <!-- Page Transitions -->
+        <!-- Swup -->
         <script defer src="https://unpkg.com/swup@4"></script>
+        <!-- <script src="https://unpkg.com/@swup/head-plugin@2"></script> -->
+        <script src="https://unpkg.com/@swup/a11y-plugin@5"></script>
 
         <script defer src="js/main.js"></script>
         <!-- <script src="js/router.js"></script> -->
@@ -36,7 +40,7 @@
         <script src="components/footer.js"></script>
 
     </head>
-    <body id="weAreHome" class="uk-light">
+    <body id="weAreHome" class="uk-light black-bg">
 
         <header-component></header-component>
         
@@ -47,8 +51,8 @@
                 <div class="uk-container uk-position-center">
                     <div class="uk-flex-middle uk-flex" uk-grid>
                         <div class="uk-width-1-1">
-                            <h1 class="transition-fade">Melkweg</h1>
-                            <h2 class="transition-fade stroke-title">Photography</h2>
+                            <h1 class="uk-margin-remove transition-fade">Melkweg</h1>
+                            <h2 class="uk-margin-remove transition-fade stroke-title">Photography</h2>
                         </div>
                     </div>
                 </div>
