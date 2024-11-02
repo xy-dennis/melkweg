@@ -40,24 +40,25 @@
         <script src="/components/footer.js"></script>
 
     </head>
-    <body class="uk-light coral-bg">
+    <body class="uk-light">
         
         <header-component></header-component>
         
-        <main id="swup" class="transition-slide transition-blocks">
+        <main id="swup" class="transition-slide coral-bg transition-blocks">
 
-            <!-- Content Section -->
+            <!-- Intro Section -->
             <section id="About" class="uk-section uk-padding-remove coral-bg transition-intro-shape">
                 <div class="uk-container uk-container-large">
-                    <div class="uk-height-match uk-height-viewport uk-flex uk-flex-middle" uk-grid>
+
+                    <div class="uk-height-viewport uk-grid-collapse uk-flex uk-flex-middle" uk-grid>
                         <div class="uk-width-1-2@m">
                             <h1 class="uk-margin-remove transition-fade" style="color: white">About</h1>
                             <h2 class="uk-margin-remove transition-fade stroke-title">Melkweg</h2>
-                            <p class="transition-fade uk-text-lead">
+                            <p class="transition-fade uk-margin-remove-bottom uk-text-lead">
                                 “Alone we can do so little; together we can do so much.” <caption class="uk-caption">— Helen Keller</caption>
                             </p>
                         </div>
-                        <div class="uk-width-1-2@m uk-visible@l uk-margin-auto uk-text-center">
+                        <div class="uk-width-1-2@m uk-visible@m uk-margin-auto uk-text-center">
                             <p class="transition-fade-long uk-text-lead">
                                 <img src="/img/about-main-776.png"
                                      class="uk-img"
@@ -72,7 +73,27 @@
                     </div>
                 </div>
             </section>
-            <!-- END - Content Section -->
+            <!-- END - Intro Section -->
+
+
+            <!-- Image Section -->
+            <section id="AboutImage" class="uk-hidden@m uk-section uk-padding-remove coral-bg uk-margin-bottom" style="margin-top: -150px">
+                <div class="uk-container uk-container-large">
+                    <div class="uk-flex uk-flex-middle" uk-grid>
+                        <div class="uk-width-1-1 uk-hidden@m uk-margin-auto uk-text-center transition-fade-long">
+                            <img src="/img/about-main-776.png"
+                                    class="uk-img"
+                                    style="max-height: 300px; width: auto"
+                                    alt="Painted Portrait" 
+                                    loading="lazy" 
+                                    width="100%" 
+                                    height="300"
+                                    uk-img>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END - Image Section -->
 
             <!-- Pre-Footer Components -->
             <section class="uk-section uk-section-expand uk-padding-remove border-top transition-border coral-bg">
@@ -82,7 +103,7 @@
                         <!-- Work Component -->
                         <work-component id="WorkComponent" class="coral-bg border-right transition-border"></work-component>
                         <!-- Contact Component -->
-                        <contact-component id="ContactComponent" class="coral-bg"></contact-component>
+                        <contact-component id="ContactComponent" class="border-top-mobile transition-border coral-bg"></contact-component>
                     </div>
                 </div>
             </section>
