@@ -43,4 +43,6 @@ window.addEventListener('scroll', function(){
     // console.log(scrollpos);
 });
 
+
+
 console.log("Main JS Fired");

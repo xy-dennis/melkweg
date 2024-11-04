@@ -1,11 +1,38 @@
 // This runs after every page change by swup
 swup.hooks.on('page:view', () => {
+
     const currentPage = window.location.pathname;
 
     // $("#mkBurgerNav").removeClass("uk-open")
     // $("html").attr("style", "overflow: scroll")
 
     UIkit.offcanvas("#mkBurgerNav").hide();
+
+    UIkit.util.$$('.sliderX').forEach(function(el) {
+        setOpacity(el.querySelectorAll('.el-item.uk-active')[0].querySelectorAll('.uk-transition-fade'));
+        UIkit.util.on(el, 'beforeitemhide', function() {
+            removeOpacity(el.querySelectorAll('.el-item.uk-active .uk-transition-fade'));
+        });
+        UIkit.util.on(el, 'itemshown', function(e) {
+            setOpacity(e.target.querySelectorAll('.uk-transition-fade'));
+        });
+    });
+
+    function setOpacity(overlays) {
+        for (let overlay of overlays) {
+            overlay.classList.add('overlay-visible');
+            overlay.classList.remove('overlay-hidden');
+        }
+    }
+
+    function removeOpacity(overlays) {
+        for (let overlay of overlays) {
+            overlay.classList.add('overlay-hidden');
+            overlay.classList.remove('overlay-visible');
+        }
+    }
+
+
 
     if (currentPage == "/") { // Home Page
 
@@ -19,7 +46,6 @@ swup.hooks.on('page:view', () => {
         $(".melkweg-logo-full").attr("src", "img/interface/mk-logo-full.svg")
         $(".melkweg-logo").attr("src", "img/interface/mk-logo.svg")
 
-        // $("#mkBurgerNav").removeClass("uk-active")
     }
     else if (currentPage == "/about/") { // About Page
 
@@ -47,6 +73,7 @@ swup.hooks.on('page:view', () => {
         $(".melkweg-logo").attr("src", "/img/interface/mk-logo.svg")
 
     }
+
     else if (currentPage == "/privacy/") { // Privacy Page
         
         $(".mk-home-nav").removeClass("uk-active")
