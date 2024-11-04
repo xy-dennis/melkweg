@@ -8,10 +8,10 @@ swup.hooks.on('page:view', () => {
 
     UIkit.offcanvas("#mkBurgerNav").hide();
 
-    UIkit.util.$$('.sliderX').forEach(function(el) {
-        setOpacity(el.querySelectorAll('.el-item.uk-active')[0].querySelectorAll('.uk-transition-fade'));
+    UIkit.util.$$('.mk-slider-container').forEach(function(el) {
+        setOpacity(el.querySelectorAll('.mk-slider-item.uk-active')[0].querySelectorAll('.uk-transition-fade'));
         UIkit.util.on(el, 'beforeitemhide', function() {
-            removeOpacity(el.querySelectorAll('.el-item.uk-active .uk-transition-fade'));
+            removeOpacity(el.querySelectorAll('.mk-slider-item.uk-active .uk-transition-fade'));
         });
         UIkit.util.on(el, 'itemshown', function(e) {
             setOpacity(e.target.querySelectorAll('.uk-transition-fade'));

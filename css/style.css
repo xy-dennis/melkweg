@@ -294,50 +294,18 @@ a:hover > .stroke-title {text-decoration: none}
 }
 
 
-.sliderX .uk-slider-items .el-item:hover .uk-transition-toggle * {opacity: 1 !important}
-.sliderX .uk-slider-items .el-item .overlay-visible{opacity: 1}
-.sliderX .uk-slider-items .el-item .overlay-hidden{opacity: 0}
-.sliderX .uk-slider-items .el-item:hover .uk-position-center,
-.sliderX .uk-slider-items .el-item .overlay-visible + .uk-position-center{
+.mk-slider-container .uk-slider-items .mk-slider-item:hover .uk-transition-toggle * {opacity: 1 !important}
+.mk-slider-container .uk-slider-items .mk-slider-item .overlay-visible{opacity: 1}
+.mk-slider-container .uk-slider-items .mk-slider-item .overlay-hidden{opacity: 0}
+.mk-slider-container .uk-slider-items .mk-slider-item:hover .uk-position-center,
+.mk-slider-container .uk-slider-items .mk-slider-item .overlay-visible + .uk-position-center{
     border: 3px solid #FBC02D;
     width: 80%;
 }
-.sliderX .uk-slider-items .el-item overlay-visible {
+.mk-slider-container .uk-slider-items .mk-slider-item overlay-visible {
     border: 3px solid #FBC02D;
 }
 
-/* .uk-slider-items > .uk-active:not(.uk-transition-active-test) > ::before { */
-/* .uk-slider-items > .uk-active:nth-child(1) { 
-    background-color: blue!important;
-} */
-/* .mk-slider.uk-active:nth-child(3) {
-    background-color: blue!important;
-} */
-
-/* .uk-slider-items > .uk-active:not(.uk-transition-active-test) {
-    background-color: rgba(176, 19, 74, 0.263);
-} */
-
-/* .uk-slider-items > .uk-active:not(.uk-transition-active-test):nth-child(1) {
-    background-color: red;
-} */
-
-/* .mk-slider {
-    height: 350px;
-    width: auto;
-}
-
-.mk-feature-slider-image {
-    height: 350px;
-    width: auto;
-} */
-
-/* .uk-slider-items div.mk-feature-active:nth-of-type(1) {
-    background-color: green;
-} */
-/* .mk-feature-active:nth-child(2) {
-    background-color: red;
-} */
 
 /* move this at some point */
 @media only screen and (max-width: 640px) {
@@ -388,6 +356,10 @@ a:hover > .stroke-title {text-decoration: none}
     .coral-bg > .component-bg > a > .uk-card-hover:not(.uk-card-default):not(.uk-card-primary):not(.uk-card-secondary):hover > h4 {
         -webkit-text-stroke: 0!important;
         font-size: 11.5vw !important;
+    }
+
+    .mk-slider-item {
+        width: 68%!important;
     }
 
 }
