@@ -15,7 +15,7 @@ class Featured extends HTMLElement {
                                 <div class="uk-slider-items uk-grid" aria-live="polite" id="uk-slider-13">
                                 
 
-                                    <div class="el-item uk-active uk-width-1-1 uk-width-1-4@m" id="uk-slider-1" role="tabpanel" aria-label="1 of 8">
+                                    <div class="el-item uk-active uk-width-1-2 uk-width-1-4@m" id="uk-slider-1" role="tabpanel" aria-label="1 of 8">
                                         <a class="uk-cover-container uk-display-block" href="#" uk-scroll>
                                                 <picture>
                                                     <img src="img/featured/featured-01.jpg" width="750" height="500" alt="" class="el-image uk-transition-opaque">
@@ -32,7 +32,7 @@ class Featured extends HTMLElement {
                                         </a>
                                     </div>
 
-                                    <div class="el-item uk-width-1-1 uk-width-1-4@m" id="uk-slider-2" role="tabpanel" aria-label="2 of 8">
+                                    <div class="el-item uk-width-1-2 uk-width-1-4@m" id="uk-slider-2" role="tabpanel" aria-label="2 of 8">
                                         <a class="uk-cover-container uk-display-block" href="#" uk-scroll>
                                                 <picture>
                                                     <img src="img/featured/featured-02.jpg" width="750" height="500" alt="" class="el-image uk-transition-opaque">
@@ -47,7 +47,7 @@ class Featured extends HTMLElement {
                                         </a>
                                     </div>
 
-                                    <div class="el-item uk-width-1-1 uk-width-1-4@m" id="uk-slider-3" role="tabpanel" aria-label="3 of 8">
+                                    <div class="el-item uk-width-1-2 uk-width-1-4@m" id="uk-slider-3" role="tabpanel" aria-label="3 of 8">
                                         <a class="uk-cover-container uk-display-block" href="#" uk-scroll>
                                                 <picture>
                                                     <img src="img/featured/featured-03.jpg" width="750" height="500" alt="" class="el-image uk-transition-opaque">
@@ -62,7 +62,7 @@ class Featured extends HTMLElement {
                                         </a>
                                     </div>
 
-                                    <div class="el-item uk-width-1-1 uk-width-1-4@m" id="uk-slider-4" role="tabpanel" aria-label="4 of 8">
+                                    <div class="el-item uk-width-1-2 uk-width-1-4@m" id="uk-slider-4" role="tabpanel" aria-label="4 of 8">
                                         <a class="uk-cover-container uk-display-block" href="#" uk-scroll>
                                                 <picture>
                                                     <img src="img/featured/featured-04.jpg" width="750" height="500" alt="" class="el-image uk-transition-opaque">
@@ -77,7 +77,7 @@ class Featured extends HTMLElement {
                                         </a>
                                     </div>
 
-                                    <div class="el-item uk-width-1-1 uk-width-1-4@m" id="uk-slider-5" role="tabpanel" aria-label="5 of 8">
+                                    <div class="el-item uk-width-1-2 uk-width-1-4@m" id="uk-slider-5" role="tabpanel" aria-label="5 of 8">
                                         <a class="uk-cover-container uk-display-block" href="#" uk-scroll>
                                                 <picture>
                                                     <img src="img/featured/featured-01.jpg" width="750" height="500" alt="" class="el-image uk-transition-opaque">
@@ -92,7 +92,7 @@ class Featured extends HTMLElement {
                                         </a>
                                     </div>
 
-                                    <div class="el-item uk-width-1-1 uk-width-1-4@m" id="uk-slider-6" role="tabpanel" aria-label="6 of 8">
+                                    <div class="el-item uk-width-1-2 uk-width-1-4@m" id="uk-slider-6" role="tabpanel" aria-label="6 of 8">
                                         <a class="uk-cover-container uk-display-block" href="#" uk-scroll>
                                                 <picture>
                                                     <img src="img/featured/featured-02.jpg" width="750" height="500" alt="" class="el-image uk-transition-opaque">
@@ -107,7 +107,7 @@ class Featured extends HTMLElement {
                                         </a>
                                     </div>
 
-                                    <div class="el-item uk-width-1-1 uk-width-1-4@m" id="uk-slider-7" role="tabpanel" aria-label="7 of 8">
+                                    <div class="el-item uk-width-1-2 uk-width-1-4@m" id="uk-slider-7" role="tabpanel" aria-label="7 of 8">
                                         <a class="uk-cover-container uk-display-block" href="#" uk-scroll>
                                                 <picture>
                                                     <img src="img/featured/featured-03.jpg" width="750" height="500" alt="" class="el-image uk-transition-opaque">
@@ -122,7 +122,7 @@ class Featured extends HTMLElement {
                                         </a>
                                     </div>
 
-                                    <div class="el-item uk-width-1-1 uk-width-1-4@m" id="uk-slider-8" role="tabpanel" aria-label="8 of 8">
+                                    <div class="el-item uk-width-1-2 uk-width-1-4@m" id="uk-slider-8" role="tabpanel" aria-label="8 of 8">
                                         <a class="uk-cover-container uk-display-block" href="#" uk-scroll>
                                                 <picture>
                                                     <img src="img/featured/featured-04.jpg" width="750" height="500" alt="" class="el-image uk-transition-opaque">
@@ -138,14 +138,18 @@ class Featured extends HTMLElement {
                                     </div>
 
 
-                                    <div class="uk-visible@s">    
+                                    
+
+                                </div>
+
+                                <div class="uk-visible@s">    
                                         <a class="el-slidenav uk-position-medium uk-position-center-left uk-icon uk-slidenav-previous uk-slidenav" uk-slidenav-previous="" uk-slider-item="previous" role="button" aria-controls="uk-slider-13" aria-label="Previous slide">
                                         </a>
                                         <a class="el-slidenav uk-position-medium uk-position-center-right uk-icon uk-slidenav-next uk-slidenav" uk-slidenav-next="" uk-slider-item="next" role="button" aria-controls="uk-slider-13" aria-label="Next slide">
                                         </a>
-                                    </div>
-
                                 </div>
+
+                               
                             </div>
                         </div>
                             
