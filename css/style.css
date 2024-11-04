@@ -293,19 +293,35 @@ a:hover > .stroke-title {text-decoration: none}
     text-shadow: 1px 1px 1px black;
 }
 
+/* pointer-events: none; */
 
 .mk-slider-container .uk-slider-items .mk-slider-item:hover .uk-transition-toggle * {opacity: 1 !important}
 .mk-slider-container .uk-slider-items .mk-slider-item .overlay-visible{opacity: 1}
 .mk-slider-container .uk-slider-items .mk-slider-item .overlay-hidden{opacity: 0}
 .mk-slider-container .uk-slider-items .mk-slider-item:hover .uk-position-center,
-.mk-slider-container .uk-slider-items .mk-slider-item .overlay-visible + .uk-position-center{
+.mk-slider-container .uk-slider-items .mk-slider-item .overlay-visible + .uk-position-center {
     border: 3px solid #FBC02D;
     width: 80%;
 }
+
+.mk-slider-image, .mk-slider-image-large, .mk-slider-image-small {
+    transition: all linear 400ms;
+}
+
+.mk-slider-image-small > a > .mk-slider-image {
+    margin-top: 110px;
+    clip-path: polygon(20% 0%, 80% 0%, 80% 60%, 20% 60%);
+    -webkit-clip-path: polygon(20% 0%, 80% 0%, 80% 60%, 20% 60%);
+}
+
+.mk-slider-image-large > a > .mk-slider-image {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
 .mk-slider-container .uk-slider-items .mk-slider-item overlay-visible {
     border: 3px solid #FBC02D;
 }
-
 
 /* move this at some point */
 @media only screen and (max-width: 640px) {

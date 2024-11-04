@@ -6,8 +6,35 @@
 // +++++++THIS WORKS++++++
 
 if (document.querySelector('#FeaturedComponent')) {
-  
-  function setOpacity(overlays) {
+
+    // Slider Image
+    function enlargeImage(overlays) {
+        for (let overlay of overlays) {
+            overlay.classList.add('mk-slider-image-large');
+            overlay.classList.remove('mk-slider-image-small');
+        }
+    }
+
+    function reduceImaGE(overlays) {
+        for (let overlay of overlays) {
+            overlay.classList.add('mk-slider-image-small');
+            overlay.classList.remove('mk-slider-image-large');
+        }
+    }
+
+    UIkit.util.$$('.mk-slider-container').forEach(function(el) {
+        enlargeImage(el.querySelectorAll('.mk-slider-item.uk-active')[0].querySelectorAll('.mk-slider-image-wrapper'));
+        UIkit.util.on(el, 'beforeitemhide', function() {
+            reduceImaGE(el.querySelectorAll('.mk-slider-item.uk-active .mk-slider-image-wrapper'));
+        });
+        UIkit.util.on(el, 'itemshown', function(e) {
+            enlargeImage(e.target.querySelectorAll('.mk-slider-image-wrapper'));
+        });
+    });
+
+    
+    // Slider Content
+    function setOpacity(overlays) {
         for (let overlay of overlays) {
             overlay.classList.add('overlay-visible');
             overlay.classList.remove('overlay-hidden');
@@ -31,5 +58,5 @@ if (document.querySelector('#FeaturedComponent')) {
         });
     });
 
-  console.log("done");
+  console.log("UIKit-Custom.js");
 }
