@@ -59,6 +59,12 @@ h4, h5, h6 {
     line-height: 4vw;
 }
 
+.navbar-left, .navbar-right {
+    position: absolute;
+    z-index: 850;
+    top: 15px;
+}
+
 .navbar-left {left: 25px}
 .navbar-right {right: 25px}
 
@@ -114,6 +120,48 @@ a:hover > .stroke-title {text-decoration: none}
     background-color: var(--yellow);
 }
 
+
+.logo-animation-wrapper {
+    /* background-color: #ff000061; */
+    overflow: hidden;
+    position: relative;
+    width: 165px;
+    height: 36px;
+    transition: all linear 300ms;
+}
+
+.mk-animate-logo {
+    width: 70px;
+    transition: all linear 300ms;
+}
+
+.logo-wrapper {
+    position: absolute;
+    width: 242px;
+    height: 36px;
+    transition: all linear 300ms;
+}
+
+.mk-animate-logo > .logo-wrapper {
+    margin-left: -175px;
+    transition: all linear 300ms;
+}
+
+/* #mk-logo-short {
+    opacity: 0;
+    transition: all linear 300ms
+} */
+
+/* .mk-animate-logo > .logo-wrapper > .melkweg-logo-full > #mk-logo-full > #mk-logo-short {
+    opacity: 1;
+    transition: all linear 300ms
+} */
+
+.mk-animate-logo > .logo-wrapper > .melkweg-logo-full > #mk-logo-full > #mk-logo-short,
+.mk-animate-logo, .logo-animation-wrapper, .logo-wrapper {
+    transition: all linear 300ms
+}
+
 .uk-navbar-nav > li > a, .uk-button {
     transition: var(--transition);
 }
@@ -147,11 +195,6 @@ a:hover > .stroke-title {text-decoration: none}
     border-radius: 25px;
     border: 1px solid var(--border);
 }
-
-/* .uk-light .uk-button { */
-    /* background-color: var(--white); */
-    /* border-radius: 25px; */
-/* } */
 
 .mk-button {
     font-size: 2.2rem;
@@ -201,11 +244,6 @@ a:hover > .stroke-title {text-decoration: none}
     font-size: 6.5vw!important
 }
 
-/* .black-bg > .component-bg > a > .uk-card-hover:not(.uk-card-default):not(.uk-card-primary):not(.uk-card-secondary):hover > p, 
-.coral-bg > .component-bg > a > .uk-card-hover:not(.uk-card-default):not(.uk-card-primary):not(.uk-card-secondary):hover > p {
-    
-} */
-
 .mk-to-top-btn {
     width: 60px;
     height: 60px;
@@ -237,11 +275,47 @@ a:hover > .stroke-title {text-decoration: none}
     background-color: var(--black)
 }
 
+.uk-panel::selection {
+    background: transparent;
+}
+
+::selection {
+    background: var(--orlal);
+}
+
+/* Feature Slider Settings */
+.slide-item-title {
+    font-size: 2.5rem;
+    line-height: 2.2rem;
+    font-weight: 500;
+    color: #ffffff;
+    margin-top: -35px;
+    text-shadow: 1px 1px 1px black;
+}
+/* .uk-slider-items > .uk-active:not(.uk-transition-active-test) > ::before { */
+.uk-slider-items > .uk-active:nth-child(1) { 
+    background-color: blue!important;
+}
+.uk-slider-items > .uk-active:not(.uk-transition-active-test) {
+    background-color: rgb(176, 19, 74);
+}
+
+.uk-slider-items > .uk-active:not(.uk-transition-active-test):nth-child(1) {
+    background-color: red;
+}
+
+/* .uk-slider-items div.mk-feature-active:nth-of-type(1) {
+    background-color: green;
+} */
+/* .mk-feature-active:nth-child(2) {
+    background-color: red;
+} */
+
 /* move this at some point */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
 
     h1, h2, h3 {
-        font-size: 15vw;
+        font-size: 13vw;
         line-height: 14vw;
     }
 
@@ -263,6 +337,8 @@ a:hover > .stroke-title {text-decoration: none}
         border-top: 1px solid var(--border);
         border-right: transparent;
     }
+
+    .navbar-left, .navbar-right {top: 0}
 
     .navbar-left {left: 0}
     .navbar-right {right: 0}

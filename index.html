@@ -27,13 +27,14 @@
         <!-- Swup -->
         <script defer src="https://unpkg.com/swup@4"></script>
         <!-- <script src="https://unpkg.com/@swup/head-plugin@2"></script> -->
-        <script src="https://unpkg.com/@swup/a11y-plugin@5"></script>
+        <!-- <script src="https://unpkg.com/@swup/a11y-plugin@5"></script> -->
 
         <script defer src="js/main.js"></script>
         <!-- <script src="js/router.js"></script> -->
 
         <!-- Components -->
         <script src="components/nav.js"></script>
+        <script src="components/featured.js"></script>
         <script src="components/about.js"></script>
         <script src="components/work.js"></script>
         <script src="components/contact.js"></script>
@@ -42,24 +43,64 @@
     </head>
     <body id="weAreHome" class="uk-light">
 
-        <header-component></header-component>
+        <header-component class="black-bg"></header-component>
         
         <main id="swup" class="transition-slide black-bg transition-blocks">
 
-            <!-- Content Section -->
-            <section id="Home" class="transition-intro-shape uk-section uk-height-viewport uk-position-relative uk-padding-remove-top uk-light black-bg">
-                <div class="uk-container uk-position-center">
-                    <div class="uk-flex-middle uk-flex" uk-grid>
-                        <div class="uk-width-1-1">
-                            <h1 class="uk-margin-remove transition-fade">Melkweg</h1>
+            <!-- Intro Section -->
+            <section id="Home" class="uk-visible@m uk-section uk-padding-remove black-bg transition-intro-shape">
+                <div class="uk-container uk-container-large">
+
+                    <div class="uk-height-viewport uk-grid-collapse uk-flex uk-flex-middle" uk-grid>
+                        <div class="uk-width-1-2@m">
+                            <h1 class="uk-margin-remove transition-fade" style="color: white">Melkweg</h1>
                             <h2 class="uk-margin-remove transition-fade stroke-title">Photography</h2>
+                        </div>
+                        <div class="uk-width-1-2@m uk-visible@m uk-margin-auto uk-text-center">
+                            <p class="transition-fade-long uk-text-lead">
+                                <!-- <img src="/img/about-main-776.png"
+                                     class="uk-img"
+                                     style="max-height: 700px; width: auto"
+                                     alt="About Image" 
+                                     loading="lazy" 
+                                     width="100%" 
+                                     height="700"
+                                     uk-img> -->
+                            </p>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- END - Content Section -->
+            <!-- END - Intro Section -->
 
-            <collection-component id="collectionComponent" class="black-bg"></collection-component>
+            <!-- Mobile Intro Section -->
+            <section id="AboutMobile Intro" class="uk-hidden@m uk-section uk-padding-remove black-bg transition-intro-shape">
+                <div class="uk-container uk-container-large uk-margin-large-top uk-padding-large">
+
+                    <div class="uk-grid-collapse uk-flex uk-flex-middle" uk-grid>
+                        <div class="uk-width-1-2@m uk-text-center uk-text-left@m">
+                            <h1 class="uk-margin-remove transition-fade" style="color: white">Melkweg</h1>
+                            <h2 class="uk-margin-remove transition-fade stroke-title">Photography</h2>
+                        </div>
+                        <div class="uk-width-1-2@m uk-margin-auto uk-text-center">
+                            <p class="transition-fade-long uk-text-lead">
+                                <img src="/img/about-main-776.png"
+                                     class="uk-img"
+                                     style="max-height: 700px; width: auto"
+                                     alt="About Image" 
+                                     loading="lazy" 
+                                     width="100%" 
+                                     height="700"
+                                     uk-img>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- END - Mobile Intro Section -->
+
+
+            <featured-component id="FeaturedComponent" class="black-bg"></featured-component>
 
             <!-- Pre-Footer Components -->
             <section class="uk-section uk-section-expand uk-padding-remove border-top transition-border black-bg">
@@ -85,6 +126,7 @@
                 integrity="sha512-hcz3GoZLfjU/z1OyArGvM1dVgrzpWcU3jnYaC6klc2gdy9HxrFkmoWmcUYbraeS+V/GWSgfv6upr9ff4RVyQPw==" crossorigin="anonymous"></script>
 
         <script defer src="js/router.js"></script>
+        <script defer src="js/uikit.js"></script>
 
     </body>
 </html>
