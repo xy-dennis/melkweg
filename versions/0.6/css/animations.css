@@ -1,0 +1,147 @@
+
+/* DOCUMENTATION - https://swup.js.org/getting-started/animations/ */
+
+/* SLIDE ANIMATIONS */
+
+.transition-slide {
+    /* opacity: 1; */
+    /* transition: opacity ease-in-out 100ms; */
+    transition: transform ease-in-out 450ms;
+    transform: translateY(0);
+    transform-origin: bottom;
+}
+
+/* Define the styles for the unloaded pages */
+html.is-animating .transition-slide {
+    /* opacity: 1; */
+    transform: translateY(100%);
+}
+
+html.is-leaving .transition-slide { 
+    /* opacity: 0; */
+    transform: translateY(0);
+}
+
+
+
+/* INTRO SHAPE - SECTION */
+html.is-changing .transition-intro-shape:before {
+    transition: height 850ms;
+    height: 0;
+}
+
+html.is-animating .transition-intro-shape:before {
+    height: 1250px;
+}
+
+html.is-leaving .transition-intro-shape:before { 
+    height: 0;
+}
+
+
+
+/* FADE ANIMATIONS */
+
+/* Chain Opacity to Elements Within the Page Animation */
+html.is-changing .transition-fade {
+    transition: all ease-in-out 900ms;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Define the styles for the unloaded pages */
+html.is-animating .transition-fade {
+    transition-delay: 25ms;
+    opacity: 0;
+    transform: translateY(60px);
+}
+
+html.is-leaving .transition-fade { 
+    opacity: 0;
+    transform: translateY(-60px);
+}
+
+
+/* FADE Slide Bottom -  LONG ANIMATIONS */
+
+/* Chain Opacity to Elements Within the Page Animation */
+html.is-changing .transition-fade-long {
+    transition: all ease-in-out 1200ms;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Define the styles for the unloaded pages */
+html.is-animating .transition-fade-long {
+    opacity: 0;
+    transform: translateY(160px);
+}
+
+html.is-leaving .transition-fade-long { 
+    transition-delay: 80ms;
+    opacity: 0;
+    transform: translateY(160px);
+}
+
+
+
+
+/* SLIDE RIGHT ANIMATIONS */
+
+/* Chain Opacity to Elements Within the Page Animation */
+html.is-changing .transition-slide-right {
+    transition: all ease-in-out 1000ms;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Define the styles for the unloaded pages */
+html.is-animating .transition-slide-right {
+    opacity: 0;
+    transform: translateX(-30px);
+}
+
+html.is-leaving .transition-slide-right { 
+    opacity: 0;
+    transform: translateX(30px);
+}
+
+
+/* SLIDE LEFT ANIMATIONS */
+
+/* Chain Opacity to Elements Within the Page Animation */
+html.is-changing .transition-slide-right {
+    transition: all ease-in-out 200ms;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* Define the styles for the unloaded pages */
+html.is-animating .transition-slide-right {
+    /* opacity: 0; */
+    transform: translateX(100px);
+}
+
+html.is-leaving .transition-slide-right { 
+    /* opacity: 0; */
+    transform: translateX(-150px);
+}
+
+
+/* BORDER ANIMATION */
+
+/* Border Page Animation */
+html.is-changing .transition-border {
+    transition: border ease-in-out 1100ms;
+    transition-delay: 220ms;
+    border: 1px;
+}
+
+/* Define the styles for the unloaded pages */
+html.is-animating .transition-border {
+    border: 0;
+}
+
+html.is-leaving .transition-border {
+    border: 0;
+}
