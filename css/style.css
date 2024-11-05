@@ -257,10 +257,6 @@ a:hover > .stroke-title {text-decoration: none}
     justify-content: center;
     align-items: center;
     transition: var(--transition);
-    /* background-image: url(/img/interface/to-top-icon.svg); */
-    /* background-position: center center; */
-    /* background-repeat: no-repeat; */
-    /* background-blend-mode: soft-light; */
 }
 
 .black-bg .mk-to-top-btn:hover > span {color: var(--coral)}
@@ -328,7 +324,7 @@ a:hover > .stroke-title {text-decoration: none}
 
 /* .uk-active .mk-slider-image-small > a > .mk-slider-image { */
 .uk-active .mk-slider-image-large {transform: scale(1)}
-.uk-active .mk-slider-image-small {transform: scale(1.2)}
+.uk-active .mk-slider-image-small {transform: scale(1.10)}
 
 .mk-slider-image-small {
     padding-left: 0;
@@ -336,8 +332,8 @@ a:hover > .stroke-title {text-decoration: none}
 }
 
 .mk-slider-image-large {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .mk-slider-container .uk-slider-items .mk-slider-item overlay-visible {
