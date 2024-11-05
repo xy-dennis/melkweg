@@ -309,14 +309,18 @@ a:hover > .stroke-title {text-decoration: none}
 }
 
 .mk-slider-image-small > a > .mk-slider-image {
-    margin-top: 110px;
-    clip-path: polygon(20% 0%, 80% 0%, 80% 60%, 20% 60%);
-    -webkit-clip-path: polygon(20% 0%, 80% 0%, 80% 60%, 20% 60%);
+    clip-path: polygon(20% 15%, 80% 15%, 80% 70%, 20% 70%);
+    -webkit-clip-path: polygon(20% 15%, 80% 15%, 80% 70%, 20% 70%);
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    transform: scale(1.1);
 }
 
 .mk-slider-image-large > a > .mk-slider-image {
+    margin-top: 0;
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    transform: matrix(1.002, 0, 0, 1.002, 0, 0);
+    transform: scale(1);
 }
 
 .mk-slider-container .uk-slider-items .mk-slider-item overlay-visible {
@@ -375,7 +379,17 @@ a:hover > .stroke-title {text-decoration: none}
     }
 
     .mk-slider-item {
-        width: 68%!important;
+        width: 75%!important;
+        max-height: 550px;
+    }
+
+    .mk-slider-image-small > a > .mk-slider-image {
+        margin-top: 50px;
+        transform: scale(1.4);
+    }
+
+    .mk-slider-image-large > a > .mk-slider-image {
+        transform: scale(1.1);
     }
 
 }

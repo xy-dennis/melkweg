@@ -5,12 +5,12 @@ class Featured extends HTMLElement {
 
     connectedCallback() {
         this.innerHTML = `
-        <section class="uk-section uk-margin-large-bottom">
+        <section class="uk-section uk-padding-remove-bottom">
             <div class="uk-container uk-container-expand uk-padding-remove">
                 <div data-id="page#3-0" class="uk-grid uk-grid-large uk-child-width-1-1 uk-grid-margin" uk-grid>
                     <div class="uk-width-1-1">
 
-                        <div id="MelkwegFeaturedRemoved" class="mk-slider-container uk-slider-container uk-margin uk-text-center uk-slider sliderX transition-fade" uk-slider="center: 1; clsActivated: uk-transition-active; active: first;" data-id="page#3-0-0-0" data-element="" role="region" aria-roledescription="carousel">
+                        <div id="MelkwegFeaturedRemoved" class="mk-slider-container uk-slider-container uk-margin uk-text-center uk-slider sliderX transition-fade" uk-slider="center: 1; clsActivated: uk-transition-active; active: first; autoplay: true; pause-on-hover: true" data-id="page#3-0-0-0" data-element="" role="region" aria-roledescription="carousel">
                             <div class="uk-position-relative">
                                 <div class="uk-slider-items uk-child-width-1-2 uk-child-width-1-4@m uk-grid-collapse" aria-live="polite" id="uk-slider-13" uk-grid>
                                 
@@ -118,18 +118,14 @@ class Featured extends HTMLElement {
                                             </div>
                                         </div>
                                     </div>
+                                </div>   
 
-
-                                    
-
-                                </div>
-
-                                <div class="uk-visible@s uk-position-bottom-right">    
-                                    <a class="uk-icon uk-slidenav-previous uk-slidenav"
-                                        uk-slidenav-previous 
-                                        uk-slider-item="previous" 
-                                        role="button" 
-                                        aria-controls="uk-slider-13" 
+                                <div class="uk-visible@s uk-position-absolute" style="right: 80px; bottom: 250px;">
+                                     <a class="uk-icon uk-slidenav-previous uk-slidenav"
+                                        uk-slidenav-previous
+                                        uk-slider-item="previous"
+                                        role="button"
+                                        aria-controls="uk-slider-13"
                                         aria-label="Previous slide">
                                     </a>
                                     <a class="uk-icon uk-slidenav-next uk-slidenav"
@@ -139,6 +135,7 @@ class Featured extends HTMLElement {
                                         aria-controls="uk-slider-13" 
                                         aria-label="Next slide">
                                     </a>
+
                                 </div>
 
                                
