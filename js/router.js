@@ -72,8 +72,8 @@ swup.hooks.on('page:view', () => {
         $("#footerMailto").addClass("hover-coral")
         $("#footerMailto").removeClass("hover-yellow")
 
-        $(".melkweg-logo-full").attr("src", "img/interface/mk-logo-full.svg")
-        $(".melkweg-logo").attr("src", "img/interface/mk-logo.svg")
+        $(".melkweg-logo-full").attr("src", "https://www.melkie.co.za/img/interface/mk-logo-full.svg")
+        $(".melkweg-logo").attr("src", "https://www.melkie.co.za/img/interface/mk-logo.svg")
 
     }
     else if (currentPage == "/about/") { // About Page
@@ -85,8 +85,8 @@ swup.hooks.on('page:view', () => {
         $("#footerMailto").removeClass("hover-coral")
         $("#footerMailto").addClass("hover-yellow")
 
-        $(".melkweg-logo-full").attr("src", "/img/interface/mk-logo-full.svg")
-        $(".melkweg-logo").attr("src", "/img/interface/mk-logo.svg")
+        $(".melkweg-logo-full").attr("src", "https://www.melkie.co.za/img/interface/mk-logo-full.svg")
+        $(".melkweg-logo").attr("src", "https://www.melkie.co.za/img/interface/mk-logo.svg")
 
     } 
     else if (currentPage == "/contact/") { // Contact Page
@@ -98,8 +98,8 @@ swup.hooks.on('page:view', () => {
         $("#footerMailto").addClass("hover-yellow")
         $("#footerMailto").removeClass("hover-coral")
 
-        $(".melkweg-logo-full").attr("src", "/img/interface/mk-logo-full.svg")
-        $(".melkweg-logo").attr("src", "/img/interface/mk-logo.svg")
+        $(".melkweg-logo-full").attr("src", "https://www.melkie.co.za/img/interface/mk-logo-full.svg")
+        $(".melkweg-logo").attr("src", "https://www.melkie.co.za/img/interface/mk-logo.svg")
 
     }
 
@@ -112,12 +112,12 @@ swup.hooks.on('page:view', () => {
         $("#footerMailto").removeClass("hover-coral")
         $("#footerMailto").addClass("hover-yellow")
 
-        $(".melkweg-logo-full").attr("src", "/img/interface/mk-logo-full.svg")
-        $(".melkweg-logo").attr("src", "/img/interface/mk-logo.svg")
+        $(".melkweg-logo-full").attr("src", "https://www.melkie.co.za/img/interface/mk-logo-full.svg")
+        $(".melkweg-logo").attr("src", "https://www.melkie.co.za/img/interface/mk-logo.svg")
     } 
     else {
-        $(".melkweg-logo-full").attr("src", "/img/interface/mk-logo-full.svg")
-        $(".melkweg-logo").attr("src", "/img/interface/mk-logo.svg")
+        $(".melkweg-logo-full").attr("src", "https://www.melkie.co.za/img/interface/mk-logo-full.svg")
+        $(".melkweg-logo").attr("src", "https://www.melkie.co.za/img/interface/mk-logo.svg")
     }
     
     console.log("Current Page " + currentPage);

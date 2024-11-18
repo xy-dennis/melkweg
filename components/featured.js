@@ -18,7 +18,7 @@ class Featured extends HTMLElement {
                                     <div class="mk-slider-item uk-active" id="uk-slider-1" role="tabpanel" aria-label="1 of 8">
                                         <div class="mk-slider-image-wrapper mk-slider-image-large">
                                             <a class="uk-display-block" href="#item-one" uk-scroll>
-                                                <img src="img/featured/featured-02.jpg" class="mk-slider-image" width="750" height="500" alt="" class="el-image uk-transition-opaque">                                                
+                                                <img src="https://www.melkie.co.za/img/featured/featured-02.jpg" class="mk-slider-image" width="750" height="500" alt="" class="uk-transition-opaque">
                                             </a>
                                         </div>
                                         <div class="overlay-hidden uk-transition-fade">
@@ -31,7 +31,7 @@ class Featured extends HTMLElement {
                                     <div class="mk-slider-item" id="uk-slider-2" role="tabpanel" aria-label="2 of 8">
                                         <div class="mk-slider-image-wrapper mk-slider-image-small">
                                             <a class="uk-display-block" href="#item-two" uk-scroll>
-                                                <img src="img/featured/featured-01.jpg" class="mk-slider-image" width="750" height="500" alt="" class="el-image uk-transition-opaque">
+                                                <img src="https://www.melkie.co.za/img/featured/featured-01.jpg" class="mk-slider-image" width="750" height="500" alt="" class="uk-transition-opaque">
                                             </a>
                                         </div>
                                         <div class="overlay-hidden uk-transition-fade">
@@ -44,7 +44,7 @@ class Featured extends HTMLElement {
                                     <div class="mk-slider-item" id="uk-slider-3" role="tabpanel" aria-label="3 of 8">
                                         <div class="mk-slider-image-wrapper mk-slider-image-small">
                                             <a class="uk-display-block" href="#item-three" uk-scroll>
-                                                <img src="img/featured/featured-03.jpg" class="mk-slider-image" width="750" height="500" alt="" class="el-image uk-transition-opaque">
+                                                <img src="https://www.melkie.co.za/img/featured/featured-03.jpg" class="mk-slider-image" width="750" height="500" alt="" class="uk-transition-opaque">
                                             </a>
                                         </div>
                                         <div class="overlay-hidden uk-transition-fade">
@@ -57,7 +57,7 @@ class Featured extends HTMLElement {
                                     <div class="mk-slider-item" id="uk-slider-4" role="tabpanel" aria-label="4 of 8">
                                         <div class="mk-slider-image-wrapper mk-slider-image-small">
                                             <a class="uk-display-block" href="#item-four" uk-scroll>
-                                                <img src="img/featured/featured-04.jpg" class="mk-slider-image" width="750" height="500" alt="" class="el-image uk-transition-opaque">
+                                                <img src="https://www.melkie.co.za/img/featured/featured-04.jpg" class="mk-slider-image" width="750" height="500" alt="" class="uk-transition-opaque">
                                             </a>
                                         </div>
                                         <div class="overlay-hidden uk-transition-fade">
@@ -70,7 +70,7 @@ class Featured extends HTMLElement {
                                     <div class="mk-slider-item" id="uk-slider-5" role="tabpanel" aria-label="5 of 8">
                                         <div class="mk-slider-image-wrapper mk-slider-image-small">
                                             <a class="uk-display-block" href="#item-five" uk-scroll>
-                                                <img src="img/featured/featured-01.jpg" class="mk-slider-image" width="750" height="500" alt="" class="el-image uk-transition-opaque">
+                                                <img src="https://www.melkie.co.za/img/featured/featured-01.jpg" class="mk-slider-image" width="750" height="500" alt="" class="uk-transition-opaque">
                                             </a>
                                         </div>
                                         <div class="overlay-hidden uk-transition-fade">
@@ -83,7 +83,7 @@ class Featured extends HTMLElement {
                                     <div class="mk-slider-item" id="uk-slider-6" role="tabpanel" aria-label="6 of 8">
                                         <div class="mk-slider-image-wrapper mk-slider-image-small">
                                             <a class="uk-display-block" href="#item-six" uk-scroll>
-                                                <img src="img/featured/featured-02.jpg" class="mk-slider-image" width="750" height="500" alt="" class="el-image uk-transition-opaque">
+                                                <img src="https://www.melkie.co.za/img/featured/featured-02.jpg" class="mk-slider-image" width="750" height="500" alt="" class="uk-transition-opaque">
                                             </a>
                                         </div>
                                         <div class="overlay-hidden uk-transition-fade">
@@ -96,7 +96,7 @@ class Featured extends HTMLElement {
                                     <div class="mk-slider-item" id="uk-slider-7" role="tabpanel" aria-label="7 of 8">
                                         <div class="mk-slider-image-wrapper mk-slider-image-small">
                                             <a class="uk-display-block" href="#item-seven" uk-scroll>
-                                                <img src="img/featured/featured-03.jpg" class="mk-slider-image" width="750" height="500" alt="" class="el-image uk-transition-opaque">
+                                                <img src="https://www.melkie.co.za/img/featured/featured-03.jpg" class="mk-slider-image" width="750" height="500" alt="" class="uk-transition-opaque">
                                             </a>
                                         </div>
                                         <div class="overlay-hidden uk-transition-fade">
@@ -109,7 +109,7 @@ class Featured extends HTMLElement {
                                     <div class="mk-slider-item" id="uk-slider-8" role="tabpanel" aria-label="8 of 8">
                                         <div class="mk-slider-image-wrapper mk-slider-image-small">
                                             <a class="uk-display-block" href="#item-eight" uk-scroll>
-                                                <img src="img/featured/featured-04.jpg" class="mk-slider-image" width="750" height="500" alt="" class="el-image uk-transition-opaque">
+                                                <img src="https://www.melkie.co.za/img/featured/featured-04.jpg" class="mk-slider-image" width="750" height="500" alt="" class="uk-transition-opaque">
                                             </a>
                                         </div>
                                         <div class="overlay-hidden uk-transition-fade">

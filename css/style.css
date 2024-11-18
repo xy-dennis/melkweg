@@ -308,6 +308,7 @@ a:hover > .stroke-title {text-decoration: none}
 .mk-slider-image-small > a,
 .mk-slider-image-small > a > .mk-slider-image {
     margin-top: 30px;
+    image-rendering: pixelated;
     clip-path: polygon(20% 15%, 80% 15%, 80% 70%, 20% 70%);
     -webkit-clip-path: polygon(20% 10%, 80% 10%, 80% 70%, 20% 70%);
     transform: matrix(1, 0, 0, 1, 0, 0);
@@ -324,14 +325,19 @@ a:hover > .stroke-title {text-decoration: none}
 }
 
 /* .uk-active .mk-slider-image-small > a > .mk-slider-image { */
-.uk-active .mk-slider-image-large {transform: scale(1)}
+.uk-active .mk-slider-image-large {
+    transform: scale(1);
+    opacity: 1;
+}
 .uk-active .mk-slider-image-small {
-    transform: scale(1.10);
+    transform: scale(1.18);
+    opacity: 1;
 }
 
 .mk-slider-image-small {
     padding-left: 0;
     padding-right: 0;
+    opacity: 0.9;
 }
 
 .mk-slider-image-large {

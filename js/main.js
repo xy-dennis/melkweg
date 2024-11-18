@@ -10,11 +10,11 @@ if (currentPage == "/") { // Home Page
     $("#footerMailto").addClass("hover-coral") // Coral Home
     $("#footerMailto").removeClass("hover-yellow")
     $("#HomeFooterLink").addClass("uk-hidden")
-    $(".melkweg-logo-full").attr("src", "img/interface/mk-logo-full.svg")
-    $(".melkweg-logo").attr("src", "img/interface/mk-logo.svg")
+    $(".melkweg-logo-full").attr("src", "https://www.melkie.co.za/img/interface/mk-logo-full.svg")
+    $(".melkweg-logo").attr("src", "https://www.melkie.co.za/img/interface/mk-logo.svg")
 } else {
-    $(".melkweg-logo-full").attr("src", "/img/interface/mk-logo-full.svg")
-    $(".melkweg-logo").attr("src", "/img/interface/mk-logo.svg")
+    $(".melkweg-logo-full").attr("src", "https://www.melkie.co.za/img/interface/mk-logo-full.svg")
+    $(".melkweg-logo").attr("src", "https://www.melkie.co.za/img/interface/mk-logo.svg")
     console.log("Not the Home Page");
 }
 
