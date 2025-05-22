@@ -15,14 +15,14 @@ class Header extends HTMLElement {
                                      class="melkweg-logo-full"
                                      height: 36px;
                                      width: 242px;
-                                     src="https://www.melkie.co.za/img/interface/mk-logo-full.svg" 
+                                     src="img/interface/mk-logo-full.svg" 
                                      alt="Melweg Photograpy Logo Full"
                                      uk-svg/>
                             </div>
                         </div>
                     </a>
                     <a class="uk-navbar-item uk-logo uk-hidden@s" href="/" aria-label="Back to Home">
-                        <img id="MelkwegLogo" class="melkweg-logo" src="https://www.melkie.co.za/img/interface/mk-logo.svg" alt="Melweg Photograpy" uk-svg/>
+                        <img id="MelkwegLogo" class="melkweg-logo" src="img/interface/mk-logo.svg" alt="Melweg Photograpy" uk-svg/>
                     </a>
                 </div>
                 <div class="navbar-right">
