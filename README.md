@@ -49,11 +49,6 @@ during the process.
 
 
 
-
-
-
-
-
 FORGET THE PACE, LOSE THE BOX. THE FORM IS WHAT YOU WANT IT TO BE HERE.
 We can find your voice, together. It's a movement toward slow art, direction, styling, conceptualisation and whatever else we find during the process.
 
@@ -104,3 +99,10 @@ x analogue & digital
 x personal shoots
 
 CTA: Ask me more
+
+
+## Contact
+
+This is just the beginning
+
+Reach out here or on social media. You can also email me directly at pjlubbinge@gmail.com
