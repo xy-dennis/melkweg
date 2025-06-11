@@ -47,12 +47,7 @@ direction, styling, conceptualisation and whatever else we find
 during the process.
 "
 
-
-
-FORGET THE PACE, LOSE THE BOX. THE FORM IS WHAT YOU WANT IT TO BE HERE.
-We can find your voice, together. It's a movement toward slow art, direction, styling, conceptualisation and whatever else we find during the process.
-
-### THE HOLY THREE 
+### THE HOLY THREE
 
 #### ONE
 DEVELOP FILM, NOT FEELINGS
@@ -103,6 +98,9 @@ CTA: Ask me more
 
 ## Contact
 
-This is just the beginning
+This is just the beginning. Reach out <a href="/contact/" target="_blank">here</a> or on social media. You can also email me directly at <a href="mailto:melkweg@melkie.co.za" target="_blank">here</a>.
 
-Reach out here or on social media. You can also email me directly at pjlubbinge@gmail.com
+###Links:
+
+
+- WhatsApp: https://wa.me/27836122272
